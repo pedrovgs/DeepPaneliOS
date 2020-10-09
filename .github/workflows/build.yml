@@ -17,12 +17,10 @@ jobs:
       - name: Install Dependencies
         run: pod install --repo-update
       - name: Run tests
-        uses: sersoft-gmbh/xcodebuild-action@v1
+        - uses: yukiarrr/ios-build-action@v1.2.0
         with:
-          workspace: DeepPanel.xcworkspace
+          workspace-path: Unity-iPhone.xcworkspace
           scheme: DeepPanelSample
-          destination: platform=iOS
-          action: test
 
     env:
       PODS_PATH: ${{ github.workspace }}/Pods
