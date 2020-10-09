@@ -1,0 +1,726 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB59F71B2530F7DC0007D102 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59F71A2530F7DC0007D102 /* AppDelegate.swift */; };
+		EB59F71D2530F7DC0007D102 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59F71C2530F7DC0007D102 /* SceneDelegate.swift */; };
+		EB59F71F2530F7DC0007D102 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59F71E2530F7DC0007D102 /* ViewController.swift */; };
+		EB59F7222530F7DC0007D102 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB59F7202530F7DC0007D102 /* Main.storyboard */; };
+		EB59F7242530F7DD0007D102 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB59F7232530F7DD0007D102 /* Assets.xcassets */; };
+		EB59F7272530F7DD0007D102 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB59F7252530F7DD0007D102 /* LaunchScreen.storyboard */; };
+		EB59F7322530F7DD0007D102 /* DeepPanelSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59F7312530F7DD0007D102 /* DeepPanelSampleTests.swift */; };
+		EBDE210B2530F7520039DDB4 /* DeepPanel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBDE21012530F7510039DDB4 /* DeepPanel.framework */; };
+		EBDE21102530F7520039DDB4 /* DeepPanelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDE210F2530F7520039DDB4 /* DeepPanelTests.swift */; };
+		EBDE21122530F7520039DDB4 /* DeepPanel.h in Headers */ = {isa = PBXBuildFile; fileRef = EBDE21042530F7510039DDB4 /* DeepPanel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB59F72E2530F7DD0007D102 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBDE20F82530F7510039DDB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB59F7172530F7DC0007D102;
+			remoteInfo = DeepPanelSample;
+		};
+		EBDE210C2530F7520039DDB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBDE20F82530F7510039DDB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBDE21002530F7510039DDB4;
+			remoteInfo = DeepPanel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB59F7182530F7DC0007D102 /* DeepPanelSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepPanelSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB59F71A2530F7DC0007D102 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB59F71C2530F7DC0007D102 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EB59F71E2530F7DC0007D102 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EB59F7212530F7DC0007D102 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB59F7232530F7DD0007D102 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB59F7262530F7DD0007D102 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB59F7282530F7DD0007D102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB59F72D2530F7DD0007D102 /* DeepPanelSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeepPanelSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB59F7312530F7DD0007D102 /* DeepPanelSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepPanelSampleTests.swift; sourceTree = "<group>"; };
+		EB59F7332530F7DD0007D102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBDE21012530F7510039DDB4 /* DeepPanel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeepPanel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBDE21042530F7510039DDB4 /* DeepPanel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeepPanel.h; sourceTree = "<group>"; };
+		EBDE21052530F7510039DDB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBDE210A2530F7520039DDB4 /* DeepPanelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeepPanelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBDE210F2530F7520039DDB4 /* DeepPanelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepPanelTests.swift; sourceTree = "<group>"; };
+		EBDE21112530F7520039DDB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB59F7152530F7DC0007D102 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB59F72A2530F7DD0007D102 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBDE20FE2530F7510039DDB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBDE21072530F7520039DDB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBDE210B2530F7520039DDB4 /* DeepPanel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB59F7192530F7DC0007D102 /* DeepPanelSample */ = {
+			isa = PBXGroup;
+			children = (
+				EB59F71A2530F7DC0007D102 /* AppDelegate.swift */,
+				EB59F71C2530F7DC0007D102 /* SceneDelegate.swift */,
+				EB59F71E2530F7DC0007D102 /* ViewController.swift */,
+				EB59F7202530F7DC0007D102 /* Main.storyboard */,
+				EB59F7232530F7DD0007D102 /* Assets.xcassets */,
+				EB59F7252530F7DD0007D102 /* LaunchScreen.storyboard */,
+				EB59F7282530F7DD0007D102 /* Info.plist */,
+			);
+			path = DeepPanelSample;
+			sourceTree = "<group>";
+		};
+		EB59F7302530F7DD0007D102 /* DeepPanelSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB59F7312530F7DD0007D102 /* DeepPanelSampleTests.swift */,
+				EB59F7332530F7DD0007D102 /* Info.plist */,
+			);
+			path = DeepPanelSampleTests;
+			sourceTree = "<group>";
+		};
+		EBDE20F72530F7510039DDB4 = {
+			isa = PBXGroup;
+			children = (
+				EBDE21032530F7510039DDB4 /* DeepPanel */,
+				EBDE210E2530F7520039DDB4 /* DeepPanelTests */,
+				EB59F7192530F7DC0007D102 /* DeepPanelSample */,
+				EB59F7302530F7DD0007D102 /* DeepPanelSampleTests */,
+				EBDE21022530F7510039DDB4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EBDE21022530F7510039DDB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBDE21012530F7510039DDB4 /* DeepPanel.framework */,
+				EBDE210A2530F7520039DDB4 /* DeepPanelTests.xctest */,
+				EB59F7182530F7DC0007D102 /* DeepPanelSample.app */,
+				EB59F72D2530F7DD0007D102 /* DeepPanelSampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBDE21032530F7510039DDB4 /* DeepPanel */ = {
+			isa = PBXGroup;
+			children = (
+				EBDE21042530F7510039DDB4 /* DeepPanel.h */,
+				EBDE21052530F7510039DDB4 /* Info.plist */,
+			);
+			path = DeepPanel;
+			sourceTree = "<group>";
+		};
+		EBDE210E2530F7520039DDB4 /* DeepPanelTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBDE210F2530F7520039DDB4 /* DeepPanelTests.swift */,
+				EBDE21112530F7520039DDB4 /* Info.plist */,
+			);
+			path = DeepPanelTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EBDE20FC2530F7510039DDB4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBDE21122530F7520039DDB4 /* DeepPanel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EB59F7172530F7DC0007D102 /* DeepPanelSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB59F7382530F7DD0007D102 /* Build configuration list for PBXNativeTarget "DeepPanelSample" */;
+			buildPhases = (
+				EB59F7142530F7DC0007D102 /* Sources */,
+				EB59F7152530F7DC0007D102 /* Frameworks */,
+				EB59F7162530F7DC0007D102 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeepPanelSample;
+			productName = DeepPanelSample;
+			productReference = EB59F7182530F7DC0007D102 /* DeepPanelSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB59F72C2530F7DD0007D102 /* DeepPanelSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB59F7392530F7DD0007D102 /* Build configuration list for PBXNativeTarget "DeepPanelSampleTests" */;
+			buildPhases = (
+				EB59F7292530F7DD0007D102 /* Sources */,
+				EB59F72A2530F7DD0007D102 /* Frameworks */,
+				EB59F72B2530F7DD0007D102 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB59F72F2530F7DD0007D102 /* PBXTargetDependency */,
+			);
+			name = DeepPanelSampleTests;
+			productName = DeepPanelSampleTests;
+			productReference = EB59F72D2530F7DD0007D102 /* DeepPanelSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EBDE21002530F7510039DDB4 /* DeepPanel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBDE21152530F7520039DDB4 /* Build configuration list for PBXNativeTarget "DeepPanel" */;
+			buildPhases = (
+				EBDE20FC2530F7510039DDB4 /* Headers */,
+				EBDE20FD2530F7510039DDB4 /* Sources */,
+				EBDE20FE2530F7510039DDB4 /* Frameworks */,
+				EBDE20FF2530F7510039DDB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeepPanel;
+			productName = DeepPanel;
+			productReference = EBDE21012530F7510039DDB4 /* DeepPanel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EBDE21092530F7520039DDB4 /* DeepPanelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBDE21182530F7520039DDB4 /* Build configuration list for PBXNativeTarget "DeepPanelTests" */;
+			buildPhases = (
+				EBDE21062530F7520039DDB4 /* Sources */,
+				EBDE21072530F7520039DDB4 /* Frameworks */,
+				EBDE21082530F7520039DDB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBDE210D2530F7520039DDB4 /* PBXTargetDependency */,
+			);
+			name = DeepPanelTests;
+			productName = DeepPanelTests;
+			productReference = EBDE210A2530F7520039DDB4 /* DeepPanelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBDE20F82530F7510039DDB4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Pedro Gómez";
+				TargetAttributes = {
+					EB59F7172530F7DC0007D102 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					EB59F72C2530F7DD0007D102 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = EB59F7172530F7DC0007D102;
+					};
+					EBDE21002530F7510039DDB4 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					EBDE21092530F7520039DDB4 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = EBDE20FB2530F7510039DDB4 /* Build configuration list for PBXProject "DeepPanel" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBDE20F72530F7510039DDB4;
+			productRefGroup = EBDE21022530F7510039DDB4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBDE21002530F7510039DDB4 /* DeepPanel */,
+				EBDE21092530F7520039DDB4 /* DeepPanelTests */,
+				EB59F7172530F7DC0007D102 /* DeepPanelSample */,
+				EB59F72C2530F7DD0007D102 /* DeepPanelSampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB59F7162530F7DC0007D102 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB59F7272530F7DD0007D102 /* LaunchScreen.storyboard in Resources */,
+				EB59F7242530F7DD0007D102 /* Assets.xcassets in Resources */,
+				EB59F7222530F7DC0007D102 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB59F72B2530F7DD0007D102 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBDE20FF2530F7510039DDB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBDE21082530F7520039DDB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB59F7142530F7DC0007D102 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB59F71F2530F7DC0007D102 /* ViewController.swift in Sources */,
+				EB59F71B2530F7DC0007D102 /* AppDelegate.swift in Sources */,
+				EB59F71D2530F7DC0007D102 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB59F7292530F7DD0007D102 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB59F7322530F7DD0007D102 /* DeepPanelSampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBDE20FD2530F7510039DDB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBDE21062530F7520039DDB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBDE21102530F7520039DDB4 /* DeepPanelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB59F72F2530F7DD0007D102 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB59F7172530F7DC0007D102 /* DeepPanelSample */;
+			targetProxy = EB59F72E2530F7DD0007D102 /* PBXContainerItemProxy */;
+		};
+		EBDE210D2530F7520039DDB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBDE21002530F7510039DDB4 /* DeepPanel */;
+			targetProxy = EBDE210C2530F7520039DDB4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB59F7202530F7DC0007D102 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB59F7212530F7DC0007D102 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB59F7252530F7DD0007D102 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB59F7262530F7DD0007D102 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB59F7342530F7DD0007D102 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y8BRGL6JJ4;
+				INFOPLIST_FILE = DeepPanelSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.pedrovgs.deeppanel.sample.DeepPanelSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB59F7352530F7DD0007D102 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y8BRGL6JJ4;
+				INFOPLIST_FILE = DeepPanelSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.pedrovgs.deeppanel.sample.DeepPanelSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EB59F7362530F7DD0007D102 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y8BRGL6JJ4;
+				INFOPLIST_FILE = DeepPanelSampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.pedrovgs.deeppanel.sample.DeepPanelSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeepPanelSample.app/DeepPanelSample";
+			};
+			name = Debug;
+		};
+		EB59F7372530F7DD0007D102 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y8BRGL6JJ4;
+				INFOPLIST_FILE = DeepPanelSampleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.pedrovgs.deeppanel.sample.DeepPanelSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeepPanelSample.app/DeepPanelSample";
+			};
+			name = Release;
+		};
+		EBDE21132530F7520039DDB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EBDE21142530F7520039DDB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EBDE21162530F7520039DDB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Y8BRGL6JJ4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DeepPanel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.pedrovgs.deeppanel.DeepPanel;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EBDE21172530F7520039DDB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Y8BRGL6JJ4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DeepPanel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.pedrovgs.deeppanel.DeepPanel;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EBDE21192530F7520039DDB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y8BRGL6JJ4;
+				INFOPLIST_FILE = DeepPanelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.pedrovgs.deeppanel.DeepPanelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EBDE211A2530F7520039DDB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y8BRGL6JJ4;
+				INFOPLIST_FILE = DeepPanelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.pedrovgs.deeppanel.DeepPanelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB59F7382530F7DD0007D102 /* Build configuration list for PBXNativeTarget "DeepPanelSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB59F7342530F7DD0007D102 /* Debug */,
+				EB59F7352530F7DD0007D102 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB59F7392530F7DD0007D102 /* Build configuration list for PBXNativeTarget "DeepPanelSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB59F7362530F7DD0007D102 /* Debug */,
+				EB59F7372530F7DD0007D102 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBDE20FB2530F7510039DDB4 /* Build configuration list for PBXProject "DeepPanel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBDE21132530F7520039DDB4 /* Debug */,
+				EBDE21142530F7520039DDB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBDE21152530F7520039DDB4 /* Build configuration list for PBXNativeTarget "DeepPanel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBDE21162530F7520039DDB4 /* Debug */,
+				EBDE21172530F7520039DDB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBDE21182530F7520039DDB4 /* Build configuration list for PBXNativeTarget "DeepPanelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBDE21192530F7520039DDB4 /* Debug */,
+				EBDE211A2530F7520039DDB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBDE20F82530F7510039DDB4 /* Project object */;
+}
