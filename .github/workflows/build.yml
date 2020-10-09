@@ -16,6 +16,8 @@ jobs:
         run: sudo xcode-select -s /Applications/Xcode_11.3.app
       - name: Install Dependencies
         run: pod install --repo-update
+      - name: List available devices
+        run: xcrun instruments -s devices
       - name: Run tests
         run: set -o pipefail && xcodebuild -workspace DeepPanel.xcworkspace -scheme 'DeepPanelSample' -destination 'platform=iOS' build test CODE_SIGN_IDENTITY=- | xcpretty -c
 
