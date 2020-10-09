@@ -17,7 +17,12 @@ jobs:
       - name: Install Dependencies
         run: pod install --repo-update
       - name: Run tests
-        run: set -o pipefail && xcodebuild -workspace DeepPanel.xcworkspace -scheme "DeepPanelSample" -destination "platform=iOS Simulator,name=iPhone SE" build test CODE_SIGN_IDENTITY=- | xcpretty -c
+        uses: sersoft-gmbh/xcodebuild-action@v1
+        with:
+          workspace: DeepPanel.xcworkspace
+          scheme: DeepPanelSample
+          destination: platform=iOS
+          action: test
 
     env:
       PODS_PATH: ${{ github.workspace }}/Pods
