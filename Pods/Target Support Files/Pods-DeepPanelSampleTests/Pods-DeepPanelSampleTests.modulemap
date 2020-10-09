@@ -1,6 +1,0 @@
-framework module Pods_DeepPanelSampleTests {
-  umbrella header "Pods-DeepPanelSampleTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
