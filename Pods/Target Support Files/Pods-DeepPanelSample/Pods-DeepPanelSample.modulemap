@@ -1,0 +1,6 @@
+framework module Pods_DeepPanelSample {
+  umbrella header "Pods-DeepPanelSample-umbrella.h"
+
+  export *
+  module * { export * }
+}

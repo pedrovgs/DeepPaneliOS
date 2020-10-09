@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08AEFD1BC0D19D52E77CAF72 /* Pods_DeepPanel_DeepPanelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9FDBDE8AEB1C593E6339F3 /* Pods_DeepPanel_DeepPanelTests.framework */; };
+		54093AA198E36398E451F1E2 /* Pods_DeepPanel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F82D36B39F7CDBFAD74327D /* Pods_DeepPanel.framework */; };
+		99F13F9C0AAC9988B26F6399 /* Pods_DeepPanelSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 081580828C63F6D970A2E345 /* Pods_DeepPanelSample.framework */; };
 		EB59F71B2530F7DC0007D102 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59F71A2530F7DC0007D102 /* AppDelegate.swift */; };
 		EB59F71D2530F7DC0007D102 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59F71C2530F7DC0007D102 /* SceneDelegate.swift */; };
 		EB59F71F2530F7DC0007D102 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59F71E2530F7DC0007D102 /* ViewController.swift */; };
@@ -17,6 +20,7 @@
 		EBDE210B2530F7520039DDB4 /* DeepPanel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBDE21012530F7510039DDB4 /* DeepPanel.framework */; };
 		EBDE21102530F7520039DDB4 /* DeepPanelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDE210F2530F7520039DDB4 /* DeepPanelTests.swift */; };
 		EBDE21122530F7520039DDB4 /* DeepPanel.h in Headers */ = {isa = PBXBuildFile; fileRef = EBDE21042530F7510039DDB4 /* DeepPanel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAF94AC5501104B6C358CFE6 /* Pods_DeepPanelSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798137B85CB2D316EF5B7C7B /* Pods_DeepPanelSampleTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +41,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		081580828C63F6D970A2E345 /* Pods_DeepPanelSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeepPanelSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1637A93EB1C636CBF3456143 /* Pods-DeepPanel-DeepPanelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepPanel-DeepPanelTests.release.xcconfig"; path = "Target Support Files/Pods-DeepPanel-DeepPanelTests/Pods-DeepPanel-DeepPanelTests.release.xcconfig"; sourceTree = "<group>"; };
+		1D49C4CEE2A51C8771E6506F /* Pods-DeepPanelSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepPanelSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-DeepPanelSampleTests/Pods-DeepPanelSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		23F2870DFC5715A78B492945 /* Pods-DeepPanel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepPanel.debug.xcconfig"; path = "Target Support Files/Pods-DeepPanel/Pods-DeepPanel.debug.xcconfig"; sourceTree = "<group>"; };
+		491D46EE75A52893A31F16C6 /* Pods-DeepPanelSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepPanelSampleTests.release.xcconfig"; path = "Target Support Files/Pods-DeepPanelSampleTests/Pods-DeepPanelSampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		4D9FDBDE8AEB1C593E6339F3 /* Pods_DeepPanel_DeepPanelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeepPanel_DeepPanelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F82D36B39F7CDBFAD74327D /* Pods_DeepPanel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeepPanel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		798137B85CB2D316EF5B7C7B /* Pods_DeepPanelSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeepPanelSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87B7CA705B996990D68EF727 /* Pods-DeepPanelSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepPanelSample.release.xcconfig"; path = "Target Support Files/Pods-DeepPanelSample/Pods-DeepPanelSample.release.xcconfig"; sourceTree = "<group>"; };
+		975EA1EB62F3EACAC6D7656B /* Pods-DeepPanel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepPanel.release.xcconfig"; path = "Target Support Files/Pods-DeepPanel/Pods-DeepPanel.release.xcconfig"; sourceTree = "<group>"; };
+		9F73F05AC0ECE557D673A0EF /* Pods-DeepPanelSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepPanelSample.debug.xcconfig"; path = "Target Support Files/Pods-DeepPanelSample/Pods-DeepPanelSample.debug.xcconfig"; sourceTree = "<group>"; };
 		EB59F7182530F7DC0007D102 /* DeepPanelSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepPanelSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB59F71A2530F7DC0007D102 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB59F71C2530F7DC0007D102 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +69,7 @@
 		EBDE210A2530F7520039DDB4 /* DeepPanelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeepPanelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBDE210F2530F7520039DDB4 /* DeepPanelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepPanelTests.swift; sourceTree = "<group>"; };
 		EBDE21112530F7520039DDB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE8DD646A8D125C2809E8433 /* Pods-DeepPanel-DeepPanelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepPanel-DeepPanelTests.debug.xcconfig"; path = "Target Support Files/Pods-DeepPanel-DeepPanelTests/Pods-DeepPanel-DeepPanelTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99F13F9C0AAC9988B26F6399 /* Pods_DeepPanelSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF94AC5501104B6C358CFE6 /* Pods_DeepPanelSampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54093AA198E36398E451F1E2 /* Pods_DeepPanel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,12 +102,40 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBDE210B2530F7520039DDB4 /* DeepPanel.framework in Frameworks */,
+				08AEFD1BC0D19D52E77CAF72 /* Pods_DeepPanel_DeepPanelTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CBBAF1FB232FF89F0588128 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F82D36B39F7CDBFAD74327D /* Pods_DeepPanel.framework */,
+				4D9FDBDE8AEB1C593E6339F3 /* Pods_DeepPanel_DeepPanelTests.framework */,
+				081580828C63F6D970A2E345 /* Pods_DeepPanelSample.framework */,
+				798137B85CB2D316EF5B7C7B /* Pods_DeepPanelSampleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B26DDAA0B19783E4EAC58F2C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23F2870DFC5715A78B492945 /* Pods-DeepPanel.debug.xcconfig */,
+				975EA1EB62F3EACAC6D7656B /* Pods-DeepPanel.release.xcconfig */,
+				EE8DD646A8D125C2809E8433 /* Pods-DeepPanel-DeepPanelTests.debug.xcconfig */,
+				1637A93EB1C636CBF3456143 /* Pods-DeepPanel-DeepPanelTests.release.xcconfig */,
+				9F73F05AC0ECE557D673A0EF /* Pods-DeepPanelSample.debug.xcconfig */,
+				87B7CA705B996990D68EF727 /* Pods-DeepPanelSample.release.xcconfig */,
+				1D49C4CEE2A51C8771E6506F /* Pods-DeepPanelSampleTests.debug.xcconfig */,
+				491D46EE75A52893A31F16C6 /* Pods-DeepPanelSampleTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EB59F7192530F7DC0007D102 /* DeepPanelSample */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +167,8 @@
 				EB59F7192530F7DC0007D102 /* DeepPanelSample */,
 				EB59F7302530F7DD0007D102 /* DeepPanelSampleTests */,
 				EBDE21022530F7510039DDB4 /* Products */,
+				B26DDAA0B19783E4EAC58F2C /* Pods */,
+				0CBBAF1FB232FF89F0588128 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,6 +219,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB59F7382530F7DD0007D102 /* Build configuration list for PBXNativeTarget "DeepPanelSample" */;
 			buildPhases = (
+				E3858C97B7F8B68704C49EBC /* [CP] Check Pods Manifest.lock */,
 				EB59F7142530F7DC0007D102 /* Sources */,
 				EB59F7152530F7DC0007D102 /* Frameworks */,
 				EB59F7162530F7DC0007D102 /* Resources */,
@@ -187,6 +237,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB59F7392530F7DD0007D102 /* Build configuration list for PBXNativeTarget "DeepPanelSampleTests" */;
 			buildPhases = (
+				9F19DCF15F0416C5BA785BA9 /* [CP] Check Pods Manifest.lock */,
 				EB59F7292530F7DD0007D102 /* Sources */,
 				EB59F72A2530F7DD0007D102 /* Frameworks */,
 				EB59F72B2530F7DD0007D102 /* Resources */,
@@ -205,6 +256,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBDE21152530F7520039DDB4 /* Build configuration list for PBXNativeTarget "DeepPanel" */;
 			buildPhases = (
+				A81850F52B9D4A0C4BB40C8D /* [CP] Check Pods Manifest.lock */,
 				EBDE20FC2530F7510039DDB4 /* Headers */,
 				EBDE20FD2530F7510039DDB4 /* Sources */,
 				EBDE20FE2530F7510039DDB4 /* Frameworks */,
@@ -223,6 +275,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBDE21182530F7520039DDB4 /* Build configuration list for PBXNativeTarget "DeepPanelTests" */;
 			buildPhases = (
+				708C6E1912D7FA0940CEF0D4 /* [CP] Check Pods Manifest.lock */,
 				EBDE21062530F7520039DDB4 /* Sources */,
 				EBDE21072530F7520039DDB4 /* Frameworks */,
 				EBDE21082530F7520039DDB4 /* Resources */,
@@ -317,6 +370,97 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		708C6E1912D7FA0940CEF0D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DeepPanel-DeepPanelTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F19DCF15F0416C5BA785BA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DeepPanelSampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A81850F52B9D4A0C4BB40C8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DeepPanel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3858C97B7F8B68704C49EBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DeepPanelSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EB59F7142530F7DC0007D102 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -388,6 +532,7 @@
 /* Begin XCBuildConfiguration section */
 		EB59F7342530F7DD0007D102 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F73F05AC0ECE557D673A0EF /* Pods-DeepPanelSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -406,6 +551,7 @@
 		};
 		EB59F7352530F7DD0007D102 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87B7CA705B996990D68EF727 /* Pods-DeepPanelSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -424,6 +570,7 @@
 		};
 		EB59F7362530F7DD0007D102 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D49C4CEE2A51C8771E6506F /* Pods-DeepPanelSampleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -446,6 +593,7 @@
 		};
 		EB59F7372530F7DD0007D102 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 491D46EE75A52893A31F16C6 /* Pods-DeepPanelSampleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -588,6 +736,7 @@
 		};
 		EBDE21162530F7520039DDB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23F2870DFC5715A78B492945 /* Pods-DeepPanel.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -613,6 +762,7 @@
 		};
 		EBDE21172530F7520039DDB4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 975EA1EB62F3EACAC6D7656B /* Pods-DeepPanel.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -638,6 +788,7 @@
 		};
 		EBDE21192530F7520039DDB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE8DD646A8D125C2809E8433 /* Pods-DeepPanel-DeepPanelTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y8BRGL6JJ4;
@@ -656,6 +807,7 @@
 		};
 		EBDE211A2530F7520039DDB4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1637A93EB1C636CBF3456143 /* Pods-DeepPanel-DeepPanelTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y8BRGL6JJ4;
