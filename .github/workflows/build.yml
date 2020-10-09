@@ -1,8 +1,8 @@
-name: Train
+name: Build
 on: [pull_request, push]
 
 jobs:
-  validate-and-test:
+  build:
     runs-on: macOS-latest
     steps:
       - name: Checkout
@@ -17,7 +17,7 @@ jobs:
       - name: Install Dependencies
         run: pod install --repo-update
       - name: Run tests
-        run: set -o pipefail && xcodebuild -workspace DeepPanel.xcworkspace -scheme 'DeepPanel' -destination 'platform=iOS Simulator,name=iPhone 11' build test CODE_SIGN_IDENTITY=- | xcpretty -c
+        run: set -o pipefail && xcodebuild -workspace DeepPanel.xcworkspace -scheme 'DeepPanelSample' -destination 'platform=iOS Simulator,name=iPhone 11' build test CODE_SIGN_IDENTITY=- | xcpretty -c
 
     env:
       PODS_PATH: ${{ github.workspace }}/Pods
