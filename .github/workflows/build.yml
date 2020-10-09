@@ -19,7 +19,7 @@ jobs:
       - name: List available devices
         run: xcrun instruments -s devices
       - name: Run tests
-        run: set -o pipefail && xcodebuild -workspace DeepPanel.xcworkspace -scheme 'DeepPanelSample' -destination 'id=BFEEA756-25EF-41C5-8838-8190447CB3A8' build test CODE_SIGN_IDENTITY=- | xcpretty -c
+        run: set -o pipefail && xcodebuild -workspace DeepPanel.xcworkspace -scheme 'DeepPanelSample' -sdk iphonesimulator -destination id=BFEEA756-25EF-41C5-8838-8190447CB3A8 build test CODE_SIGN_IDENTITY=- | xcpretty -c
 
     env:
       PODS_PATH: ${{ github.workspace }}/Pods
