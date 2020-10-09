@@ -1,0 +1,25 @@
+name: Build
+on: [pull_request, push]
+
+jobs:
+  build:
+    runs-on: macOS-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Cache Cocoapods
+        uses: actions/cache@v2
+        with:
+          path: ${{ env.PODS_PATH }}
+          key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
+      - name: Install Dependencies
+        run: pod install --repo-update
+      - name: List available devices
+        run: xcrun instruments -s devices
+      - name: Show Available Destinations
+        run: xcodebuild -workspace DeepPanel.xcworkspace -scheme 'DeepPanel' -showdestinations
+      - name: Run tests
+        run: set -o pipefail && xcodebuild clean test -workspace DeepPanel.xcworkspace -scheme 'DeepPanelSample' -destination 'platform=iOS Simulator,OS=13.7,name=iPhone 8' -showBuildTimingSummary CODE_SIGN_IDENTITY=- | xcpretty -c
+
+    env:
+      PODS_PATH: ${{ github.workspace }}/Pods
