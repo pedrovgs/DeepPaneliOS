@@ -22,7 +22,7 @@ class DeepPanel {
         nativeDeepPanel = DeepPaneliOSWrapper()
     }
     
-    func extractPanelsInfo(from image: UIImage) {
+    func extractPanelsInfo(from image: UIImage) -> PredictionResult {
         guard let interpreter = DeepPanel.interpreter else {
             fatalError("DeepPanel interpreter hasn't been initialized")
         }
@@ -30,7 +30,12 @@ class DeepPanel {
             fatalError("NativeDeepPanel hasn't been initialized")
         }
         let imageRawData = scaleAndExtractImageRgbData(image)
-        evaluateModel(with: interpreter, andNativeDeepPanel: nativeDeepPanel, andInput: imageRawData)
+        let evaluationResult = evaluateModel(
+            with: interpreter,
+            andNativeDeepPanel: nativeDeepPanel,
+            andInput: imageRawData
+        )
+        return mapEvaluationResultToPredictionResult(evaluationResult)
     }
     
     func extractDetailedPanelsInfo(from image: UIImage) -> DetailedPredictionResult {
@@ -41,11 +46,12 @@ class DeepPanel {
             fatalError("NativeDeepPanel hasn't been initialized")
         }
         let imageRawData = scaleAndExtractImageRgbData(image)
-        let evaluationResult = evaluateModel(with: interpreter, andNativeDeepPanel: nativeDeepPanel, andInput: imageRawData)
-        let predictionResult = PredictionResult(
-            rawPrediction: extratPredictionFromResult(evaluationResult),
-            panels: extractPanelsFromResult(evaluationResult)
+        let evaluationResult = evaluateModel(
+            with: interpreter,
+            andNativeDeepPanel: nativeDeepPanel,
+            andInput: imageRawData
         )
+        let predictionResult = mapEvaluationResultToPredictionResult(evaluationResult)
         return DetailedPredictionResult(
             imageInput: image,
             labeledAreasBitmap: image,
@@ -137,6 +143,13 @@ class DeepPanel {
         } catch let error {
             fatalError("Failed to resize image with error: \(error.localizedDescription)")
         }
+    }
+    
+    private func mapEvaluationResultToPredictionResult(_ evaluationResult: RawPanelsInfo) -> PredictionResult {
+        return PredictionResult(
+            rawPrediction: extratPredictionFromResult(evaluationResult),
+            panels: extractPanelsFromResult(evaluationResult)
+        )
     }
     
     private func extratPredictionFromResult(_ info: RawPanelsInfo) -> [[Int]] {
