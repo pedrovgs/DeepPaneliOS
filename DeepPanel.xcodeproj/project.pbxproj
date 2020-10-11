@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -45,6 +45,9 @@
 		EBCCA819253360B30095F356 /* RawPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCCA817253360B30095F356 /* RawPanel.m */; };
 		EBCCA820253361090095F356 /* RawPanelsInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCCA81F253361090095F356 /* RawPanelsInfo.m */; };
 		EBCCA821253361090095F356 /* RawPanelsInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCCA81F253361090095F356 /* RawPanelsInfo.m */; };
+		EBCCA8232533659A0095F356 /* Pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCCA8222533659A0095F356 /* Pages.swift */; };
+		EBCCA825253368CF0095F356 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCCA824253368CF0095F356 /* model.swift */; };
+		EBCCA82625336A2A0095F356 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCCA824253368CF0095F356 /* model.swift */; };
 		EBDE210B2530F7520039DDB4 /* DeepPanel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBDE21012530F7510039DDB4 /* DeepPanel.framework */; };
 		EBDE21102530F7520039DDB4 /* DeepPanelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDE210F2530F7520039DDB4 /* DeepPanelTests.swift */; };
 		EBDE21122530F7520039DDB4 /* DeepPanel.h in Headers */ = {isa = PBXBuildFile; fileRef = EBDE21042530F7510039DDB4 /* DeepPanel.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -110,6 +113,8 @@
 		EBCCA81525335D500095F356 /* RawPanelsInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RawPanelsInfo.h; sourceTree = "<group>"; };
 		EBCCA817253360B30095F356 /* RawPanel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RawPanel.m; sourceTree = "<group>"; };
 		EBCCA81F253361090095F356 /* RawPanelsInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RawPanelsInfo.m; sourceTree = "<group>"; };
+		EBCCA8222533659A0095F356 /* Pages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pages.swift; sourceTree = "<group>"; };
+		EBCCA824253368CF0095F356 /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
 		EBDE21012530F7510039DDB4 /* DeepPanel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeepPanel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBDE21042530F7510039DDB4 /* DeepPanel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeepPanel.h; sourceTree = "<group>"; };
 		EBDE21052530F7510039DDB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -192,6 +197,7 @@
 				EB59F7232530F7DD0007D102 /* Assets.xcassets */,
 				EB59F7252530F7DD0007D102 /* LaunchScreen.storyboard */,
 				EB59F7282530F7DD0007D102 /* Info.plist */,
+				EBCCA8222533659A0095F356 /* Pages.swift */,
 			);
 			path = DeepPanelSample;
 			sourceTree = "<group>";
@@ -269,6 +275,7 @@
 				EBDE21052530F7510039DDB4 /* Info.plist */,
 				EBCCA7E125310C880095F356 /* DeepPanel.swift */,
 				EBCCA7E62531AD830095F356 /* UIImage+TensorFlow.swift */,
+				EBCCA824253368CF0095F356 /* model.swift */,
 			);
 			path = DeepPanel;
 			sourceTree = "<group>";
@@ -314,6 +321,7 @@
 				EB59F7142530F7DC0007D102 /* Sources */,
 				EB59F7152530F7DC0007D102 /* Frameworks */,
 				EB59F7162530F7DC0007D102 /* Resources */,
+				29C0D48370EFDBF9B247F2AA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -466,6 +474,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		29C0D48370EFDBF9B247F2AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DeepPanelSample/Pods-DeepPanelSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DeepPanelSample/Pods-DeepPanelSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DeepPanelSample/Pods-DeepPanelSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		708C6E1912D7FA0940CEF0D4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -567,6 +592,8 @@
 				EBCCA819253360B30095F356 /* RawPanel.m in Sources */,
 				EBCCA7F8253345CE0095F356 /* DeepPaneliOSWrapper.mm in Sources */,
 				EBCCA8022533483A0095F356 /* connected-components.cpp in Sources */,
+				EBCCA8232533659A0095F356 /* Pages.swift in Sources */,
+				EBCCA82625336A2A0095F356 /* model.swift in Sources */,
 				EB59F71F2530F7DC0007D102 /* ViewController.swift in Sources */,
 				EB59F71B2530F7DC0007D102 /* AppDelegate.swift in Sources */,
 				EBCCA7F1253339D50095F356 /* deep-panel-ios.cpp in Sources */,
@@ -594,6 +621,7 @@
 				EBCCA818253360B30095F356 /* RawPanel.m in Sources */,
 				EBCCA7E225310C880095F356 /* DeepPanel.swift in Sources */,
 				EBCCA7FE253348140095F356 /* deep-panel.cpp in Sources */,
+				EBCCA825253368CF0095F356 /* model.swift in Sources */,
 				EBCCA820253361090095F356 /* RawPanelsInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

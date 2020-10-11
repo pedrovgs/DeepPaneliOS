@@ -32,6 +32,26 @@ class DeepPanel {
         let imageRawData = scaleAndExtractImageRgbData(image)
         evaluateModel(with: interpreter, andNativeDeepPanel: nativeDeepPanel, andInput: imageRawData)
     }
+    
+    func extractDetailedPanelsInfo(from image: UIImage) -> DetailedPredictionResult {
+        guard let interpreter = DeepPanel.interpreter else {
+            fatalError("DeepPanel interpreter hasn't been initialized")
+        }
+        guard let nativeDeepPanel = DeepPanel.nativeDeepPanel else {
+            fatalError("NativeDeepPanel hasn't been initialized")
+        }
+        let imageRawData = scaleAndExtractImageRgbData(image)
+        let evaluationResult = evaluateModel(with: interpreter, andNativeDeepPanel: nativeDeepPanel, andInput: imageRawData)
+        let predictionResult = PredictionResult(
+            rawPrediction: extratPredictionFromResult(evaluationResult),
+            panels: extractPanelsFromResult(evaluationResult)
+        )
+        return DetailedPredictionResult(
+            imageInput: image,
+            labeledAreasBitmap: image,
+            panelsBitmap: image,
+            predictionResult: predictionResult)
+    }
 
     private static func initializeModel() -> Interpreter? {
         guard let modelPath = Bundle.main.path(
@@ -61,19 +81,18 @@ class DeepPanel {
     
     private func evaluateModel(with interpreter: Interpreter,
                                andNativeDeepPanel nativeDeepPanel: DeepPaneliOSWrapper,
-                               andInput input: Data) {
+                               andInput input: Data) -> RawPanelsInfo {
         do {
             try interpreter.copy(input, toInputAt: 0)
             try interpreter.invoke()
             let outputTensor = try interpreter.output(at: 0)
             let prediction = mapOutputTensorToPredicition(outputTensor)
             let scale: Float = 2.0
-            let result = nativeDeepPanel.extractPanelsInfo(
+            return nativeDeepPanel.extractPanelsInfo(
                 prediction,
                 andScale: scale,
                 andOriginalImageWidth: 200,
                 andOriginalImageHeigth: 200)
-            print(result)
         } catch let error {
             fatalError("Failed to evaluate the model with tihe image data: \(error.localizedDescription)")
         }
@@ -118,6 +137,21 @@ class DeepPanel {
         } catch let error {
             fatalError("Failed to resize image with error: \(error.localizedDescription)")
         }
+    }
+    
+    private func extratPredictionFromResult(_ info: RawPanelsInfo) -> [[Int]] {
+        
+        return [[Int]]()
+    }
+    
+    private func extractPanelsFromResult(_ info: RawPanelsInfo) -> Panels {
+        var index = 0
+        let panels = info.panels as! [Panel]
+        let mappedPanels: [Panel] = panels.map { panel in
+            index += 1
+            return Panel(panelNumberInPage: index, left: panel.left, top: panel.top, right: panel.right, bottom: panel.bottom)
+        }
+        return Panels(panelsInfo: mappedPanels)
     }
 
 

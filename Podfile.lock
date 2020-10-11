@@ -1,4 +1,5 @@
 PODS:
+  - SteviaLayout (4.7.3)
   - TensorFlowLiteC (2.3.0):
     - TensorFlowLiteC/Core (= 2.3.0)
   - TensorFlowLiteC/Core (2.3.0)
@@ -8,17 +9,20 @@ PODS:
     - TensorFlowLiteC (= 2.3.0)
 
 DEPENDENCIES:
+  - SteviaLayout
   - TensorFlowLiteSwift
 
 SPEC REPOS:
   trunk:
+    - SteviaLayout
     - TensorFlowLiteC
     - TensorFlowLiteSwift
 
 SPEC CHECKSUMS:
+  SteviaLayout: c2ecdcff57d44e38fd2f65e54ad52aeae28ca0c4
   TensorFlowLiteC: 51f50caf5777f740a70e2c1a5dbdc149e7aeb50b
   TensorFlowLiteSwift: fb152cc1eec36b25b03a23c07f5d58113170af58
 
-PODFILE CHECKSUM: 800e50bbfff2ac934a1e4074ae4fa715194dcf2f
+PODFILE CHECKSUM: 69fda149959002b7f949523f8111f9585c68dea4
 
 COCOAPODS: 1.9.3
