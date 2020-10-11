@@ -12,7 +12,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let deepPanel = DeepPanel()
+        let page = UIImage(named: "sample_page_0")!
+        deepPanel.extractPanelsInfo(from: page)
     }
 
 
