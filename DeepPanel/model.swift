@@ -21,9 +21,9 @@ struct PredictionResult {
 }
 
 struct DetailedPredictionResult {
-    let imageInput: UIImage
-    let labeledAreasBitmap: UIImage
-    let panelsBitmap: UIImage
+    let inputImage: UIImage
+    let labeledAreasImage: UIImage
+    let panelsImage: UIImage
     let predictionResult: PredictionResult
 }
 
@@ -33,4 +33,12 @@ struct Panel {
     let top: Int
     let right: Int
     let bottom: Int
+    
+    var width: Int {
+        return right - left
+    }
+    
+    var height: Int {
+        return bottom - top
+    }
 }

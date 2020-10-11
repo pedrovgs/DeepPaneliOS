@@ -44,9 +44,9 @@ class ViewController: UIViewController {
     private func showPredictionForPage(_ deepPanel: DeepPanel,_ page: String) {
         let page = UIImage(named: "sample_page_0")!
         let result = deepPanel.extractDetailedPanelsInfo(from: page)
-        originalImage.image = result.imageInput
-        mask.image = result.labeledAreasBitmap
-        panelsInfo.image = result.panelsBitmap
+        originalImage.image = result.inputImage
+        mask.image = result.labeledAreasImage
+        panelsInfo.image = result.panelsImage
     }
 
 

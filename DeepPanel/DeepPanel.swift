@@ -52,10 +52,12 @@ class DeepPanel {
             andInput: imageRawData
         )
         let predictionResult = mapEvaluationResultToPredictionResult(evaluationResult)
+        let labeledAreasImage = createImageFromLabeledData(predictionResult.rawPrediction)
+        let panelsImage = createPanelsImageFromResult(image, predictionResult)
         return DetailedPredictionResult(
-            imageInput: image,
-            labeledAreasBitmap: image,
-            panelsBitmap: image,
+            inputImage: image,
+            labeledAreasImage: labeledAreasImage,
+            panelsImage: panelsImage,
             predictionResult: predictionResult)
     }
 
@@ -153,8 +155,15 @@ class DeepPanel {
     }
     
     private func extratPredictionFromResult(_ info: RawPanelsInfo) -> [[Int]] {
-        
-        return [[Int]]()
+        let size = DeepPanel.modelInputImageSize
+        var result = [[Int]](repeating: [Int](repeating: 0, count: size), count: size)
+        for i in 0..<size {
+            for j in 0..<size {
+                let pixelLabel: Int = Int(info.connectedAreas.pointee![i])
+                result[i][j] = pixelLabel
+            }
+        }
+        return result
     }
     
     private func extractPanelsFromResult(_ info: RawPanelsInfo) -> Panels {
