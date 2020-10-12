@@ -11,7 +11,9 @@
 int matrix_size = 224;
 
 int coordinateToIndex(int i, int j, int z) {
-    return i * 224 * 3 + j * 3 + z;
+    // j and i indexes order is changed on purpose because the original matrix
+    // is rotated when reading the values.
+    return j * 224 * 3 + i * 3 + z;
 }
 
 int **map_prediction_to_labeled_matrix(float *prediction) {

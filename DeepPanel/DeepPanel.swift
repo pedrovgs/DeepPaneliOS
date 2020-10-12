@@ -116,11 +116,6 @@ class DeepPanel {
         let logits: [Float32] = outputTensor.data.toArray(type: Float32.self)
         return UnsafeMutablePointer(mutating: logits)
     }
-
-    private func coordinateToIndex(x: Int, y: Int, z: Int) -> Int {
-        return x * DeepPanel.modelInputImageSize * DeepPanel.classCount + y * DeepPanel.classCount + z
-
-    }
     
     private func scaleAndExtractImageRgbData(_ image: UIImage) -> Data {
         guard let interpreter = DeepPanel.interpreter else {
@@ -152,7 +147,9 @@ class DeepPanel {
             let row = areas[i]!
             for j in 0..<size {
                 let pixelLabel = row[j]
-                result[i][j] = Int(pixelLabel)
+                // j and i indexes order is changed on purpose because the original matrix
+                // is rotated when reading the values.
+                result[j][i] = Int(pixelLabel)
             }
         }
         return result
