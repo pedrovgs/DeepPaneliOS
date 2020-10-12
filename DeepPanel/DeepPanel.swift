@@ -48,7 +48,6 @@ class DeepPanel {
             fatalError("NativeDeepPanel hasn't been initialized")
         }
         let imageRawData = scaleAndExtractImageRgbData(image)
-        let scaledImage = image.scaledImage(with: CGSize(width: 224, height: 224))!
         let evaluationResult = evaluateModel(
             with: interpreter,
             andNativeDeepPanel: nativeDeepPanel,
@@ -60,7 +59,7 @@ class DeepPanel {
         let labeledAreasImage = createImageFromLabeledData(predictionResult.rawPrediction)
         let panelsImage = createPanelsImageFromResult(image, predictionResult)
         return DetailedPredictionResult(
-            inputImage: scaledImage,
+            inputImage: image,
             labeledAreasImage: labeledAreasImage,
             panelsImage: panelsImage,
             predictionResult: predictionResult)
@@ -147,11 +146,13 @@ class DeepPanel {
     
     private func extratPredictionFromResult(_ info: RawPanelsInfo) -> [[Int]] {
         let size = DeepPanel.modelInputImageSize
+        let areas: UnsafeMutablePointer<UnsafeMutablePointer<Int32>?> = info.connectedAreas
         var result = [[Int]](repeating: [Int](repeating: 0, count: size), count: size)
         for i in 0..<size {
+            let row = areas[i]!
             for j in 0..<size {
-                let pixelLabel: Int = Int(info.connectedAreas.pointee![i])
-                result[i][j] = pixelLabel
+                let pixelLabel = row[j]
+                result[i][j] = Int(pixelLabel)
             }
         }
         return result

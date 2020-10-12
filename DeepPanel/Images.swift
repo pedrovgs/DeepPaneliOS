@@ -75,10 +75,10 @@ private func labelFromColor(_ label: Int) -> PixelData {
 }
 
 private struct PixelData {
-    var a: Int
-    var r: Int
-    var g: Int
-    var b: Int
+    var a: UInt8
+    var r: UInt8
+    var g: UInt8
+    var b: UInt8
 }
 
 private let colorRange = 1...255
@@ -89,11 +89,11 @@ private let blue = PixelData(a: 255, r: 0, g: 0, b: 255)
 private let cyan = PixelData(a: 255, r: 0, g: 255, b: 255)
 private let yellow = PixelData(a: 255, r: 255, g: 255, b: 0)
 private let magenta = PixelData(a: 255, r: 255, g: 0, b: 255)
-private let random1 = PixelData(a: 255, r: Int.random(in: colorRange), g: Int.random(in: colorRange), b: Int.random(in: colorRange))
-private let random2 = PixelData(a: 255, r: Int.random(in: colorRange), g: Int.random(in: colorRange), b: Int.random(in: colorRange))
-private let random3 = PixelData(a: 255, r: Int.random(in: colorRange), g: Int.random(in: colorRange), b: Int.random(in: colorRange))
-private let random4 = PixelData(a: 255, r: Int.random(in: colorRange), g: Int.random(in: colorRange), b: Int.random(in: colorRange))
-private let random5 = PixelData(a: 255, r: Int.random(in: colorRange), g: Int.random(in: colorRange), b: Int.random(in: colorRange))
+private let random1 = PixelData(a: 255, r: UInt8(Int.random(in: colorRange)), g: UInt8(Int.random(in: colorRange)), b: UInt8(Int.random(in: colorRange)))
+private let random2 = PixelData(a: 255, r: UInt8(Int.random(in: colorRange)), g: UInt8(Int.random(in: colorRange)), b: UInt8(Int.random(in: colorRange)))
+private let random3 = PixelData(a: 255, r: UInt8(Int.random(in: colorRange)), g: UInt8(Int.random(in: colorRange)), b: UInt8(Int.random(in: colorRange)))
+private let random4 = PixelData(a: 255, r: UInt8(Int.random(in: colorRange)), g: UInt8(Int.random(in: colorRange)), b: UInt8(Int.random(in: colorRange)))
+private let random5 = PixelData(a: 255, r: UInt8(Int.random(in: colorRange)), g: UInt8(Int.random(in: colorRange)), b: UInt8(Int.random(in: colorRange)))
 
 
 private func imageFromARGB32Bitmap(pixels: [PixelData], width: Int, height: Int) -> UIImage? {
@@ -105,7 +105,7 @@ private func imageFromARGB32Bitmap(pixels: [PixelData], width: Int, height: Int)
     let bitsPerComponent = 8
     let bitsPerPixel = 32
 
-    var data = pixels // Copy to mutable []
+    var data = pixels
     guard let providerRef = CGDataProvider(data: NSData(bytes: &data,
                             length: data.count * MemoryLayout<PixelData>.size)
         )
