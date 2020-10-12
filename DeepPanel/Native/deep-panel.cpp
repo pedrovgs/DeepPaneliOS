@@ -62,6 +62,14 @@ int clamp(int value, int min, int max) {
     }
 }
 
+int compute_border_size(int original_image_width, int original_image_height) {
+    if (original_image_height > original_image_width) {
+        return original_image_width * 30 / 3056;
+    } else {
+        return original_image_height * 30 / 1988;
+    }
+}
+
 DeepPanelResult
 extract_panels_data(ConnectedComponentResult connected_components_result,
                     int width,
@@ -106,7 +114,7 @@ extract_panels_data(ConnectedComponentResult connected_components_result,
     } else {
         vertical_correction = ((height * scale) - original_image_height) / 2;
     }
-    int border = 30;
+    int border = compute_border_size(original_image_width, original_image_height);
     for (int i = 1; i <= number_of_panels; i++) {
         Panel panel;
         int proposed_left =
