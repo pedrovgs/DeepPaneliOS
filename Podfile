@@ -20,6 +20,7 @@ target 'DeepPanelSample' do
   use_frameworks!
 
   shared
+  pod 'SteviaLayout'
   
   target 'DeepPanelSampleTests' do
     inherit! :search_paths

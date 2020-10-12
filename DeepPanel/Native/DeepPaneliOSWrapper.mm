@@ -14,7 +14,7 @@
 
 - (NSArray *)mapDeepPanelResultToRawPanels:(DeepPanelResult)result {
     NSMutableArray *rawPanels = [NSMutableArray array];
-    for (int i = 1; i < result.connected_components.total_clusters; i++)
+    for (int i = 0; i < result.connected_components.total_clusters; i++)
     {
         Panel panel = result.panels[i];
         RawPanel *rawPanel = [[RawPanel alloc] init];
