@@ -17,6 +17,9 @@
 		EB59F7242530F7DD0007D102 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB59F7232530F7DD0007D102 /* Assets.xcassets */; };
 		EB59F7272530F7DD0007D102 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB59F7252530F7DD0007D102 /* LaunchScreen.storyboard */; };
 		EB59F7322530F7DD0007D102 /* DeepPanelSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB59F7312530F7DD0007D102 /* DeepPanelSampleTests.swift */; };
+		EB8668B12534C16500001012 /* FullScreenImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8668B02534C16500001012 /* FullScreenImageViewController.swift */; };
+		EB8668B32534C51600001012 /* Performance.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8668B22534C51600001012 /* Performance.swift */; };
+		EB8668B52534C68200001012 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8668B42534C68200001012 /* Toast.swift */; };
 		EBCCA7E225310C880095F356 /* DeepPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCCA7E125310C880095F356 /* DeepPanel.swift */; };
 		EBCCA7E52531A82A0095F356 /* model.tflite in Resources */ = {isa = PBXBuildFile; fileRef = EBCCA7E42531A82A0095F356 /* model.tflite */; };
 		EBCCA7E72531AD830095F356 /* UIImage+TensorFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCCA7E62531AD830095F356 /* UIImage+TensorFlow.swift */; };
@@ -96,6 +99,9 @@
 		EB59F72D2530F7DD0007D102 /* DeepPanelSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeepPanelSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB59F7312530F7DD0007D102 /* DeepPanelSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepPanelSampleTests.swift; sourceTree = "<group>"; };
 		EB59F7332530F7DD0007D102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB8668B02534C16500001012 /* FullScreenImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenImageViewController.swift; sourceTree = "<group>"; };
+		EB8668B22534C51600001012 /* Performance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Performance.swift; sourceTree = "<group>"; };
+		EB8668B42534C68200001012 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		EBCCA7E125310C880095F356 /* DeepPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepPanel.swift; sourceTree = "<group>"; };
 		EBCCA7E42531A82A0095F356 /* model.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = model.tflite; sourceTree = "<group>"; };
 		EBCCA7E62531AD830095F356 /* UIImage+TensorFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+TensorFlow.swift"; sourceTree = "<group>"; };
@@ -201,6 +207,9 @@
 				EB59F7252530F7DD0007D102 /* LaunchScreen.storyboard */,
 				EB59F7282530F7DD0007D102 /* Info.plist */,
 				EBCCA8222533659A0095F356 /* Pages.swift */,
+				EB8668B02534C16500001012 /* FullScreenImageViewController.swift */,
+				EB8668B22534C51600001012 /* Performance.swift */,
+				EB8668B42534C68200001012 /* Toast.swift */,
 			);
 			path = DeepPanelSample;
 			sourceTree = "<group>";
@@ -600,6 +609,8 @@
 			files = (
 				EBCCA7EB2533353C0095F356 /* UIImage+TensorFlow.swift in Sources */,
 				EBCCA7E8253334990095F356 /* DeepPanel.swift in Sources */,
+				EB8668B52534C68200001012 /* Toast.swift in Sources */,
+				EB8668B12534C16500001012 /* FullScreenImageViewController.swift in Sources */,
 				EBCCA7FF253348140095F356 /* deep-panel.cpp in Sources */,
 				EBCCA819253360B30095F356 /* RawPanel.m in Sources */,
 				EBCCA7F8253345CE0095F356 /* DeepPaneliOSWrapper.mm in Sources */,
@@ -611,6 +622,7 @@
 				EB59F71B2530F7DC0007D102 /* AppDelegate.swift in Sources */,
 				EBCCA7F1253339D50095F356 /* deep-panel-ios.cpp in Sources */,
 				EB59F71D2530F7DC0007D102 /* SceneDelegate.swift in Sources */,
+				EB8668B32534C51600001012 /* Performance.swift in Sources */,
 				EBCCA821253361090095F356 /* RawPanelsInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
