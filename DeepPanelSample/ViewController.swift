@@ -57,13 +57,13 @@ class ViewController: UIViewController {
         nextButton.isUserInteractionEnabled = true
         nextButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(showNextPage)))
         detailButton.isUserInteractionEnabled = true
+        detailButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(showDetailScreen)))
         originalImage.isUserInteractionEnabled = true
         originalImage.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(openOriginalFullImage)))
         mask.isUserInteractionEnabled = true
         mask.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(openMaskFullImage)))
         panelsInfo.isUserInteractionEnabled = true
         panelsInfo.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(openPanelsInfoFullImage)))
-        
     }
     
     @objc
@@ -108,6 +108,14 @@ class ViewController: UIViewController {
             vc.image = prediction.panelsImage
             navigationController?.pushViewController(vc, animated: true)
         }
+    }
+    
+    @objc
+    private func showDetailScreen() {
+        let vc = ExtractPanelsViewController()
+        vc.page = originalImage.image
+        vc.panelsInfoImage = panelsInfo.image
+        navigationController?.pushViewController(vc, animated: true)
     }
 
 }

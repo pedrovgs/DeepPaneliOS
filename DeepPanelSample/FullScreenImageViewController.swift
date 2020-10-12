@@ -19,6 +19,7 @@ class FullScreenImageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor.white
         adjustConstraints()
         if let image = image {
             imageView.image = image

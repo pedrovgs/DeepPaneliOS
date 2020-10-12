@@ -20,6 +20,7 @@
 		EB8668B12534C16500001012 /* FullScreenImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8668B02534C16500001012 /* FullScreenImageViewController.swift */; };
 		EB8668B32534C51600001012 /* Performance.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8668B22534C51600001012 /* Performance.swift */; };
 		EB8668B52534C68200001012 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8668B42534C68200001012 /* Toast.swift */; };
+		EB8668B72534C75300001012 /* ExtractPanelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8668B62534C75300001012 /* ExtractPanelsViewController.swift */; };
 		EBCCA7E225310C880095F356 /* DeepPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCCA7E125310C880095F356 /* DeepPanel.swift */; };
 		EBCCA7E52531A82A0095F356 /* model.tflite in Resources */ = {isa = PBXBuildFile; fileRef = EBCCA7E42531A82A0095F356 /* model.tflite */; };
 		EBCCA7E72531AD830095F356 /* UIImage+TensorFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCCA7E62531AD830095F356 /* UIImage+TensorFlow.swift */; };
@@ -102,6 +103,7 @@
 		EB8668B02534C16500001012 /* FullScreenImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenImageViewController.swift; sourceTree = "<group>"; };
 		EB8668B22534C51600001012 /* Performance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Performance.swift; sourceTree = "<group>"; };
 		EB8668B42534C68200001012 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		EB8668B62534C75300001012 /* ExtractPanelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractPanelsViewController.swift; sourceTree = "<group>"; };
 		EBCCA7E125310C880095F356 /* DeepPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepPanel.swift; sourceTree = "<group>"; };
 		EBCCA7E42531A82A0095F356 /* model.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = model.tflite; sourceTree = "<group>"; };
 		EBCCA7E62531AD830095F356 /* UIImage+TensorFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+TensorFlow.swift"; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 				EB8668B02534C16500001012 /* FullScreenImageViewController.swift */,
 				EB8668B22534C51600001012 /* Performance.swift */,
 				EB8668B42534C68200001012 /* Toast.swift */,
+				EB8668B62534C75300001012 /* ExtractPanelsViewController.swift */,
 			);
 			path = DeepPanelSample;
 			sourceTree = "<group>";
@@ -612,6 +615,7 @@
 				EB8668B52534C68200001012 /* Toast.swift in Sources */,
 				EB8668B12534C16500001012 /* FullScreenImageViewController.swift in Sources */,
 				EBCCA7FF253348140095F356 /* deep-panel.cpp in Sources */,
+				EB8668B72534C75300001012 /* ExtractPanelsViewController.swift in Sources */,
 				EBCCA819253360B30095F356 /* RawPanel.m in Sources */,
 				EBCCA7F8253345CE0095F356 /* DeepPaneliOSWrapper.mm in Sources */,
 				EBCCA8022533483A0095F356 /* connected-components.cpp in Sources */,
