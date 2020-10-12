@@ -10,11 +10,11 @@ import TensorFlowLite
 import UIKit
 
 class DeepPanel {
+
+    static let modelInputImageSize = 224
     
     private static var interpreter: Interpreter?
     private static var nativeDeepPanel: DeepPaneliOSWrapper?
-
-    private static let modelInputImageSize = 224
     private static let classCount = 3
     
     static func initialize() {
@@ -33,7 +33,9 @@ class DeepPanel {
         let evaluationResult = evaluateModel(
             with: interpreter,
             andNativeDeepPanel: nativeDeepPanel,
-            andInput: imageRawData
+            andInput: imageRawData,
+            andOriginalImageWidth: Int(image.size.width),
+            andOriginalImageHeight: Int(image.size.height)
         )
         return mapEvaluationResultToPredictionResult(evaluationResult)
     }
@@ -46,16 +48,19 @@ class DeepPanel {
             fatalError("NativeDeepPanel hasn't been initialized")
         }
         let imageRawData = scaleAndExtractImageRgbData(image)
+        let scaledImage = image.scaledImage(with: CGSize(width: 224, height: 224))!
         let evaluationResult = evaluateModel(
             with: interpreter,
             andNativeDeepPanel: nativeDeepPanel,
-            andInput: imageRawData
+            andInput: imageRawData,
+            andOriginalImageWidth: Int(image.size.width),
+            andOriginalImageHeight: Int(image.size.height)
         )
         let predictionResult = mapEvaluationResultToPredictionResult(evaluationResult)
         let labeledAreasImage = createImageFromLabeledData(predictionResult.rawPrediction)
         let panelsImage = createPanelsImageFromResult(image, predictionResult)
         return DetailedPredictionResult(
-            inputImage: image,
+            inputImage: scaledImage,
             labeledAreasImage: labeledAreasImage,
             panelsImage: panelsImage,
             predictionResult: predictionResult)
@@ -89,37 +94,28 @@ class DeepPanel {
     
     private func evaluateModel(with interpreter: Interpreter,
                                andNativeDeepPanel nativeDeepPanel: DeepPaneliOSWrapper,
-                               andInput input: Data) -> RawPanelsInfo {
+                               andInput input: Data,
+                               andOriginalImageWidth originalImageWidth: Int,
+                               andOriginalImageHeight originalImageHeight: Int) -> RawPanelsInfo {
         do {
             try interpreter.copy(input, toInputAt: 0)
             try interpreter.invoke()
             let outputTensor = try interpreter.output(at: 0)
             let prediction = mapOutputTensorToPredicition(outputTensor)
-            let scale: Float = 2.0
+            let scale: Float = computeResizeScale(originalImageWidth, originalImageHeight)
             return nativeDeepPanel.extractPanelsInfo(
                 prediction,
                 andScale: scale,
-                andOriginalImageWidth: 200,
-                andOriginalImageHeigth: 200)
+                andOriginalImageWidth: Int32(originalImageWidth),
+                andOriginalImageHeigth: Int32(originalImageHeight))
         } catch let error {
             fatalError("Failed to evaluate the model with tihe image data: \(error.localizedDescription)")
         }
     }
     
     private func mapOutputTensorToPredicition(_ outputTensor: Tensor) -> UnsafeMutablePointer<Float> {
-        let capacity = DeepPanel.modelInputImageSize * DeepPanel.modelInputImageSize * DeepPanel.classCount
-        let result = UnsafeMutablePointer<Float>.allocate(capacity: capacity)
-        let flattenPrediction = outputTensor.data.toArray(type: Float32.self)
-        for x in 0..<DeepPanel.modelInputImageSize {
-          for y in 0..<DeepPanel.modelInputImageSize {
-            for z in 0..<DeepPanel.classCount {
-                let plainIndex = coordinateToIndex(x: x, y: y, z: z)
-                let prediction = flattenPrediction[plainIndex]
-                result.advanced(by: x+y+z).pointee = prediction
-                }
-            }
-        }
-        return result
+        let logits: [Float32] = outputTensor.data.toArray(type: Float32.self)
+        return UnsafeMutablePointer(mutating: logits)
     }
 
     private func coordinateToIndex(x: Int, y: Int, z: Int) -> Int {
@@ -133,15 +129,10 @@ class DeepPanel {
         }
         do {
             let inputShape = try interpreter.input(at: 0).shape
-            let batchSize = inputShape.dimensions[0]
             let inputImageWidth = inputShape.dimensions[1]
             let inputImageHeight = inputShape.dimensions[2]
-            let inputPixelSize = inputShape.dimensions[3]
-            return image.scaledData(
-              with: CGSize(width: inputImageWidth, height: inputImageHeight),
-              byteCount: inputImageWidth * inputImageHeight * inputPixelSize * batchSize,
-              isQuantized: false
-            )!
+            let resizedImage = image.scaledImage(with: CGSize(width: inputImageWidth, height: inputImageHeight))!
+            return resizedImage.extractPixelsData()!
         } catch let error {
             fatalError("Failed to resize image with error: \(error.localizedDescription)")
         }
@@ -168,10 +159,16 @@ class DeepPanel {
     
     private func extractPanelsFromResult(_ info: RawPanelsInfo) -> Panels {
         var index = 0
-        let panels = info.panels as! [Panel]
-        let mappedPanels: [Panel] = panels.map { panel in
+        let panels = info.panels as! [RawPanel]
+        let mappedPanels: [Panel] = panels.map { rawPanel in
+            let panel = Panel(panelNumberInPage: index,
+                              left: Int(rawPanel.left),
+                              top: Int(rawPanel.top),
+                              right: Int(rawPanel.right),
+                              bottom: Int(rawPanel.bottom)
+            )
             index += 1
-            return Panel(panelNumberInPage: index, left: panel.left, top: panel.top, right: panel.right, bottom: panel.bottom)
+            return panel
         }
         return Panels(panelsInfo: mappedPanels)
     }

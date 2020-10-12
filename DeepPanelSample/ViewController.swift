@@ -30,15 +30,15 @@ class ViewController: UIViewController {
         originalImage.contentMode = .scaleAspectFit
         originalImage.Top == view.safeAreaLayoutGuide.Top
         originalImage.centerHorizontally()
-        originalImage.height(33%)
+        originalImage.height(32%)
         mask.contentMode = .scaleAspectFit
         mask.Top == originalImage.Bottom
         mask.centerHorizontally()
-        mask.height(33%)
+        mask.height(32%)
         panelsInfo.contentMode = .scaleAspectFit
         panelsInfo.Top == mask.Bottom
         panelsInfo.centerHorizontally()
-        panelsInfo.height(34%)
+        panelsInfo.height(32%)
     }
     
     private func showPredictionForPage(_ deepPanel: DeepPanel,_ page: String) {

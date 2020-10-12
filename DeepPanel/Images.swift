@@ -10,6 +10,11 @@ import Foundation
 import UIKit
 import CoreGraphics
 
+func computeResizeScale(_ height: Int,_ width: Int) -> Float {
+    let originalSize = Float(max(width, height))
+    return originalSize / Float(DeepPanel.modelInputImageSize)
+}
+
 func createPanelsImageFromResult(_ image: UIImage,_ predictionResult: PredictionResult) -> UIImage {
      let imageSize = image.size
     let scale: CGFloat = 0

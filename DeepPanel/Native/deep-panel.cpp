@@ -20,7 +20,7 @@ ConnectedComponentResult remove_small_areas_and_recover_border(
     int **clusters_matrix = connected_component_result.clusters_matrix;
     int *pixels_per_labels = connected_component_result.pixels_per_labels;
     int image_size = width * height;
-    bool label_removed[1000] = { false };
+    bool label_removed[10000] = { false };
     int min_allowed_area = image_size * 0.03;
     for (int i = 0; i < width; i++)
         for (int j = 0; j < height; j++) {
