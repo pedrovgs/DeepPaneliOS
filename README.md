@@ -26,43 +26,37 @@ Usage
 
 Include the library in your ``build.gradle``
 
-```groovy
-dependencies{
-    implementation 'com.github.pedrovgs:deeppanel:0.0.1'
-}
+```
+pod 'DeepPanel'
 ```
 
-To start using the library you just need to call `DeepPanel.initialize` with a valid `Context`. You can initialize this library from any ``Activity`` or from your ``Application`` class:
+To start using the library you just need to call `DeepPanel.initialize` . You can initialize this library from any ``ViewController`` or from your ``AppDelegate`` class:
 
-```kotlin
-class MyApplication : Application() {
-    override fun onCreate() {
-        ....
-        DeepPanel.initialize(this)
-        ....
+```swift
+class AppDelegate: UIResponder, UIApplicationDelegate {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        DeepPanel.initialize()
+        return true
     }
 }
 ```
 
-Once you've initialized the library get any comic book page, transform it into a ``Bitmap`` instance and extract the panels' information using ``extractDetailedPanelsInfo`` method as follows:
+Once you've initialized the library get any comic book page, transform it into a ``UIImage`` instance and extract the panels' information using ``extractPanelsInfo`` method as follows:
 
-```kotlin
-val deepPanel = DeepPanel()
-val result = deepPanel.extractDetailedPanelsInfo(bitmapSamplePage)
-result.panels.panelsInfo.forEach { panel ->
-            Log.d("DeepPanel", """Left: ${panel.left}, Top: ${panel.top}
-                    |Right: ${panel.right}, Bottom: ${panel.bottom}
-                    |Width: ${panel.width}, Height: ${panel.height}
-                """.trimMargin())
-        }
+```swift
+let deepPanel = DeepPanel()
+let result = deepPanel.extract(bitmapSamplePage)
+result.panels.panelsInfo.forEach { panel in
+print("\(panel.left) - \(panel.top) - \(panel.right) - \(panel.bottom)")
+}
 ```
 
-``DetailedPredictionResult`` contains a list of panels with the position of every panel on the page and also a 2d matrix of integers with the following labels inside:
+``PredictionResult`` contains a list of panels with the position of every panel on the page and also a 2d matrix of integers with the following labels inside:
 
 * 0 - Label associated to the page of the content.
 * N - Content related to the same panel on the page.
 
-Do not invoke DeepPanel ``extractDetailedPanelsInfo`` from the main app thread. Even when we can analyze a page in less than 400ms using a Pixel 4 as a reference device, you should not block your app UI at all. Our recommendation is to extract the analysis computation out of the UI thread using any threading mechanism.
+Do not invoke DeepPanel ``extractPanelsInfo`` from the main app thread. Even when we can analyze a page in less than 500ms using regular device, you should not block your app UI at all. Our recommendation is to extract the analysis computation out of the UI thread using any queue.
 
 Keep in mind for the first version of this library we consider every panel as a rectangle even if the content panel inside has a different shape. We will improve this in the future, for our very first release we've decided to use this approach because we will always represent the information of the panel on a rectangular screen.
 
