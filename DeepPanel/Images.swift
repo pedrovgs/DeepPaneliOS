@@ -26,7 +26,8 @@ func createPanelsImageFromResult(_ image: UIImage,_ predictionResult: Prediction
     for panel in predictionResult.panels.panelsInfo {
         let rectangle = CGRect(x: panel.left, y: panel.top, width: panel.width, height: panel.height)
         let pixelData = labelFromColor(panel.panelNumberInPage)
-        let color = CGColor(srgbRed: CGFloat(Float(pixelData.r) / 255), green: CGFloat(pixelData.g) / 255, blue: CGFloat(pixelData.b) / 255, alpha: 0.2)
+        let comps = [CGFloat(pixelData.r) / 255, CGFloat(pixelData.g) / 255, CGFloat(pixelData.b) / 255, 0.2]
+        let color = CGColor(colorSpace: CGColorSpace(name: CGColorSpace.sRGB)!, components: comps)!
         context.setFillColor(color)
         context.addRect(rectangle)
         context.drawPath(using: .fill)

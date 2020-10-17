@@ -14,6 +14,6 @@ FOUNDATION_EXPORT double DeepPanelVersionNumber;
 //! Project version string for DeepPanel.
 FOUNDATION_EXPORT const unsigned char DeepPanelVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <DeepPanel/PublicHeader.h>
-
-
+#import "RawPanel.h"
+#import "RawPanelsInfo.h"
+#import "DeepPaneliOSWrapper.h"
