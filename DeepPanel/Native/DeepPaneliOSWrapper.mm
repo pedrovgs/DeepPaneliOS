@@ -32,7 +32,7 @@
                 andScale:(float)scale
                 andOriginalImageWidth:(int)originalImageWidth
                 andOriginalImageHeigth:(int)originalImageHeight {
-    DeepPanelResult result = extract_panels_info_native(prediction, scale, originalImageWidth, originalImageHeight);
+    DeepPanelResult result = native::extract_panels_info_native(prediction, scale, originalImageWidth, originalImageHeight);
     RawPanelsInfo *rawPanelsInfo = [[RawPanelsInfo alloc] init];
     rawPanelsInfo.connectedAreas = result.connected_components.clusters_matrix;
     rawPanelsInfo.panels = [self mapDeepPanelResultToRawPanels:result];

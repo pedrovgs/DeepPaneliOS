@@ -9,36 +9,36 @@
 import Foundation
 import UIKit
 
-typealias Prediction = [[Int]]
+public typealias Prediction = [[Int]]
 
-struct Panels {
-    let panelsInfo: [Panel]
+public struct Panels {
+    public let panelsInfo: [Panel]
 }
 
-struct PredictionResult {
-    let rawPrediction: Prediction
-    let panels: Panels
+public struct PredictionResult {
+    public let rawPrediction: Prediction
+    public let panels: Panels
 }
 
-struct DetailedPredictionResult {
-    let inputImage: UIImage
-    let labeledAreasImage: UIImage
-    let panelsImage: UIImage
-    let predictionResult: PredictionResult
+public struct DetailedPredictionResult {
+    public let inputImage: UIImage
+    public let labeledAreasImage: UIImage
+    public let panelsImage: UIImage
+    public let predictionResult: PredictionResult
 }
 
-struct Panel {
-    let panelNumberInPage: Int
-    let left: Int
-    let top: Int
-    let right: Int
-    let bottom: Int
+public struct Panel {
+    public let panelNumberInPage: Int
+    public let left: Int
+    public let top: Int
+    public let right: Int
+    public let bottom: Int
     
-    var width: Int {
+    public var width: Int {
         return right - left
     }
     
-    var height: Int {
+    public var height: Int {
         return bottom - top
     }
 }

@@ -9,7 +9,7 @@ import Foundation
 import TensorFlowLite
 import UIKit
 
-class DeepPanel {
+public class DeepPanel {
 
     static let modelInputImageSize = 224
     
@@ -17,12 +17,12 @@ class DeepPanel {
     private static var nativeDeepPanel: DeepPaneliOSWrapper?
     private static let classCount = 3
     
-    static func initialize() {
+    public static func initialize() {
         interpreter = initializeModel()
         nativeDeepPanel = DeepPaneliOSWrapper()
     }
     
-    func extractPanelsInfo(from image: UIImage) -> PredictionResult {
+    public func extractPanelsInfo(from image: UIImage) -> PredictionResult {
         guard let interpreter = DeepPanel.interpreter else {
             fatalError("DeepPanel interpreter hasn't been initialized")
         }
@@ -40,7 +40,7 @@ class DeepPanel {
         return mapEvaluationResultToPredictionResult(evaluationResult)
     }
     
-    func extractDetailedPanelsInfo(from image: UIImage) -> DetailedPredictionResult {
+    public func extractDetailedPanelsInfo(from image: UIImage) -> DetailedPredictionResult {
         guard let interpreter = DeepPanel.interpreter else {
             fatalError("DeepPanel interpreter hasn't been initialized")
         }

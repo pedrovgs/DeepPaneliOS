@@ -13,6 +13,11 @@
 #include "deep-panel.hpp"
 #include "DeepPanelResult.hpp"
 
-DeepPanelResult extract_panels_info_native(float *prediction, float scale, int original_image_width, int original_image_height);
+
+using namespace std;
+
+namespace native {
+        DeepPanelResult extract_panels_info_native(float *prediction, float scale, int original_image_width, int original_image_height);
+}
 
 #endif /* deep_panel_ios_hpp */

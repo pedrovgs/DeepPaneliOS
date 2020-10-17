@@ -14,6 +14,7 @@ FOUNDATION_EXPORT double DeepPanelVersionNumber;
 //! Project version string for DeepPanel.
 FOUNDATION_EXPORT const unsigned char DeepPanelVersionString[];
 
-#import "RawPanel.h"
-#import "RawPanelsInfo.h"
-#import "DeepPaneliOSWrapper.h"
+#import <DeepPanel/RawPanel.h>
+#import <DeepPanel/RawPanelsInfo.h>
+#import <DeepPanel/DeepPaneliOSWrapper.h>
+#import <DeepPanel/deep-panel-ios.hpp>

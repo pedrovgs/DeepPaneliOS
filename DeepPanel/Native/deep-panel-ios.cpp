@@ -40,7 +40,8 @@ int **map_prediction_to_labeled_matrix(float *prediction) {
     return labeled_matrix;
 }
 
-DeepPanelResult extract_panels_info_native(float *prediction, float scale, int original_image_width, int original_image_height) {
+
+DeepPanelResult native::extract_panels_info_native(float *prediction, float scale, int original_image_width, int original_image_height) {
     int **labeled_matrix = map_prediction_to_labeled_matrix(prediction);
     return extract_panels_info(labeled_matrix,
                         matrix_size,
