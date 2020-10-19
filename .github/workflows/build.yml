@@ -20,9 +20,9 @@ jobs:
         run: xcodebuild -workspace DeepPanel.xcworkspace -scheme 'DeepPanel' -showdestinations
       - name: Lint Podspec
         run: pod lib lint --allow-warnings
-      - name: Run DeepPanel tests
-        run: set -o pipefail && xcodebuild clean test -workspace DeepPanel.xcworkspace -scheme 'DeepPanel' -destination 'platform=iOS Simulator,OS=13.7,name=iPhone 8' -showBuildTimingSummary CODE_SIGN_IDENTITY=- | xcpretty -c
-      - name: Run DeepPanelSample tests
+      - name: Build DeepPanel
+        run: set -o pipefail && xcodebuild clean build -workspace DeepPanel.xcworkspace -scheme 'DeepPanel' -destination 'platform=iOS Simulator,OS=13.7,name=iPhone 8' -showBuildTimingSummary CODE_SIGN_IDENTITY=- | xcpretty -c
+      - name: Build DeepPanelSample
         working-directory: DeepPanelSample
         run: set -o pipefail && xcodebuild clean test -workspace DeepPanelSample.xcworkspace -scheme 'DeepPanelSample' -destination 'platform=iOS Simulator,OS=13.7,name=iPhone 8' -showBuildTimingSummary CODE_SIGN_IDENTITY=- | xcpretty -c
 
