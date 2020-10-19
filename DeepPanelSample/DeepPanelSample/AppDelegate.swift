@@ -2,11 +2,12 @@
 //  AppDelegate.swift
 //  DeepPanelSample
 //
-//  Created by Pedro Gómez on 09/10/2020.
+//  Created by Pedro Gómez on 17/10/2020.
 //  Copyright © 2020 Pedro Gómez. All rights reserved.
 //
 
 import UIKit
+import DeepPanel
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,7 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
         DeepPanel.initialize()
         return true
     }

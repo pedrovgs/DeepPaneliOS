@@ -9,7 +9,6 @@
 #ifndef deep_panel_hpp
 #define deep_panel_hpp
 
-#include "deep-panel-ios.hpp"
 #include "DeepPanelResult.hpp"
 
 DeepPanelResult extract_panels_info(int **labeled_matrix,

@@ -1,30 +1,13 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '9.0'
 
-def shared
-    pod 'TensorFlowLiteSwift'
-end
-
 target 'DeepPanel' do
   use_frameworks!
 
-  shared
+  pod 'TensorFlowLiteSwift'
 
   target 'DeepPanelTests' do
-  
-  end
-
-end
-
-target 'DeepPanelSample' do
-  use_frameworks!
-
-  shared
-  pod 'SteviaLayout'
-  
-  target 'DeepPanelSampleTests' do
     inherit! :search_paths
-  
   end
 
 end

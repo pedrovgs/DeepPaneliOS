@@ -1,4 +1,7 @@
 PODS:
+  - DeepPanel (0.0.1):
+    - TensorFlowLiteSwift
+  - SteviaLayout (4.7.3)
   - TensorFlowLiteC (2.3.0):
     - TensorFlowLiteC/Core (= 2.3.0)
   - TensorFlowLiteC/Core (2.3.0)
@@ -8,17 +11,25 @@ PODS:
     - TensorFlowLiteC (= 2.3.0)
 
 DEPENDENCIES:
-  - TensorFlowLiteSwift
+  - DeepPanel (from `../`)
+  - SteviaLayout
 
 SPEC REPOS:
   trunk:
+    - SteviaLayout
     - TensorFlowLiteC
     - TensorFlowLiteSwift
 
+EXTERNAL SOURCES:
+  DeepPanel:
+    :path: "../"
+
 SPEC CHECKSUMS:
+  DeepPanel: 7b67ac7dbd04aea4526e08cec288f5d7def4ca90
+  SteviaLayout: c2ecdcff57d44e38fd2f65e54ad52aeae28ca0c4
   TensorFlowLiteC: 51f50caf5777f740a70e2c1a5dbdc149e7aeb50b
   TensorFlowLiteSwift: fb152cc1eec36b25b03a23c07f5d58113170af58
 
-PODFILE CHECKSUM: ab7f86b1485a1d32208b40fa6c93099a1a360a88
+PODFILE CHECKSUM: 3e9c6d0d593d46a0d7ddc701aa8d2f7f7c10b52d
 
 COCOAPODS: 1.9.3

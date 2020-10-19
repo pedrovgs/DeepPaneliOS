@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  DeepPanelSample
 //
-//  Created by Pedro Gómez on 09/10/2020.
+//  Created by Pedro Gómez on 17/10/2020.
 //  Copyright © 2020 Pedro Gómez. All rights reserved.
 //
 

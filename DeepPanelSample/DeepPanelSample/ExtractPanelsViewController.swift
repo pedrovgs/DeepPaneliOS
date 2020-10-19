@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import Stevia
+import DeepPanel
 
 class ExtractPanelsViewController: UIViewController {
     
@@ -68,4 +69,3 @@ class ExtractPanelsViewController: UIViewController {
     }
 
 }
-
