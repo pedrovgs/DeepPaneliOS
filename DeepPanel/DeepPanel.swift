@@ -22,6 +22,8 @@ public class DeepPanel {
         nativeDeepPanel = DeepPaneliOSWrapper()
     }
     
+    public init() {}
+    
     public func extractPanelsInfo(from image: UIImage) -> PredictionResult {
         guard let interpreter = DeepPanel.interpreter else {
             fatalError("DeepPanel interpreter hasn't been initialized")

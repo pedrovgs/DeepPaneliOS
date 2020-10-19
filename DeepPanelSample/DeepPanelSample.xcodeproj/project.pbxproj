@@ -16,6 +16,11 @@
 		EB2E94E1253B0C430095ACFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB2E94E0253B0C430095ACFA /* Assets.xcassets */; };
 		EB2E94E4253B0C430095ACFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2E94E2253B0C430095ACFA /* LaunchScreen.storyboard */; };
 		EB2E94EF253B0C430095ACFA /* DeepPanelSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2E94EE253B0C430095ACFA /* DeepPanelSampleTests.swift */; };
+		EBCE567A253E078E00DF1162 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCE5679253E078E00DF1162 /* Toast.swift */; };
+		EBCE567C253E079C00DF1162 /* Performance.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCE567B253E079C00DF1162 /* Performance.swift */; };
+		EBCE567E253E07A900DF1162 /* Pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCE567D253E07A900DF1162 /* Pages.swift */; };
+		EBCE5680253E07BB00DF1162 /* FullScreenImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCE567F253E07BB00DF1162 /* FullScreenImageViewController.swift */; };
+		EBCE5682253E07CB00DF1162 /* ExtractPanelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCE5681253E07CB00DF1162 /* ExtractPanelsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,11 @@
 		EB2E94EA253B0C430095ACFA /* DeepPanelSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeepPanelSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2E94EE253B0C430095ACFA /* DeepPanelSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepPanelSampleTests.swift; sourceTree = "<group>"; };
 		EB2E94F0253B0C430095ACFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBCE5679253E078E00DF1162 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		EBCE567B253E079C00DF1162 /* Performance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Performance.swift; sourceTree = "<group>"; };
+		EBCE567D253E07A900DF1162 /* Pages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pages.swift; sourceTree = "<group>"; };
+		EBCE567F253E07BB00DF1162 /* FullScreenImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenImageViewController.swift; sourceTree = "<group>"; };
+		EBCE5681253E07CB00DF1162 /* ExtractPanelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractPanelsViewController.swift; sourceTree = "<group>"; };
 		F9A5FD4FD97D1CCD6ADA1828 /* Pods-DeepPanelSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepPanelSampleTests.release.xcconfig"; path = "Target Support Files/Pods-DeepPanelSampleTests/Pods-DeepPanelSampleTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +128,11 @@
 				EB2E94E0253B0C430095ACFA /* Assets.xcassets */,
 				EB2E94E2253B0C430095ACFA /* LaunchScreen.storyboard */,
 				EB2E94E5253B0C430095ACFA /* Info.plist */,
+				EBCE5679253E078E00DF1162 /* Toast.swift */,
+				EBCE567B253E079C00DF1162 /* Performance.swift */,
+				EBCE567D253E07A900DF1162 /* Pages.swift */,
+				EBCE567F253E07BB00DF1162 /* FullScreenImageViewController.swift */,
+				EBCE5681253E07CB00DF1162 /* ExtractPanelsViewController.swift */,
 			);
 			path = DeepPanelSample;
 			sourceTree = "<group>";
@@ -317,7 +332,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBCE567E253E07A900DF1162 /* Pages.swift in Sources */,
 				EB2E94DC253B0C410095ACFA /* ViewController.swift in Sources */,
+				EBCE567C253E079C00DF1162 /* Performance.swift in Sources */,
+				EBCE5682253E07CB00DF1162 /* ExtractPanelsViewController.swift in Sources */,
+				EBCE567A253E078E00DF1162 /* Toast.swift in Sources */,
+				EBCE5680253E07BB00DF1162 /* FullScreenImageViewController.swift in Sources */,
 				EB2E94D8253B0C410095ACFA /* AppDelegate.swift in Sources */,
 				EB2E94DA253B0C410095ACFA /* SceneDelegate.swift in Sources */,
 			);
