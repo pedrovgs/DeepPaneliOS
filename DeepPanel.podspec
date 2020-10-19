@@ -7,12 +7,15 @@ Pod::Spec.new do |s|
   s.author           = "Pedro Vicente Gómez Sánchez"
   s.social_media_url = "https://twitter.com/pedro_g_s"
   s.source           = { :git => "https://github.com/pedrovgs/DeepPaneliOS.git", :tag => "#{s.version}" }
-  s.ios.deployment_target = "9.0"
-  s.requires_arc = "DeepPanel/**/*"
-  s.source_files = "DeepPanel/**/*.{mm,m,h,hpp,cpp}"
-  s.public_header_files = "DeepPanel/*.h"
-  s.pod_target_xcconfig = { "OTHER_LDFLAGS" => "$(inherited) -lc++",
-                               "OTHER_CFLAGS" => "$(inherited) -Wno-return-type -Wno-logical-op-parentheses -Wno-conversion -Wno-parentheses -Wno-unused-function -Wno-unused-variable -Wno-switch -Wno-unused-command-line-argument",
-                               "OTHER_CPLUSPLUSFLAGS" => "$(inherited) -DSILENT -DRARDLL $(OTHER_CFLAGS)" }
-  s.compiler_flags = "-Xanalyzer -analyzer-disable-all-checks"
+  s.platform = :ios, '9.0'
+  s.framework = "Foundation"
+  s.dependency "TensorFlowLiteSwift"
+  s.static_framework = true
+  s.swift_versions = "5.0"
+  s.requires_arc = true
+  s.public_header_files = 'DeepPanel/**/*.{h}'
+  s.source_files = "DeepPanel/**/*.{h,m,mm,swift}", "Native/**/*{hpp,cpp}"
+  s.resources = "DeepPanel/**/*.{tflite}"
+  s.libraries = "c++"
+  s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/Native" }
 end

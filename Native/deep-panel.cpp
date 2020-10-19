@@ -8,6 +8,7 @@
 
 #include <stdlib.h>
 #include "deep-panel.hpp"
+#include "connected-components.hpp"
 
 int INT_MAX = 2147483647;
 int INT_MIN = -2147483648;

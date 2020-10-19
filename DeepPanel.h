@@ -17,4 +17,4 @@ FOUNDATION_EXPORT const unsigned char DeepPanelVersionString[];
 #import <DeepPanel/RawPanel.h>
 #import <DeepPanel/RawPanelsInfo.h>
 #import <DeepPanel/DeepPaneliOSWrapper.h>
-#import <DeepPanel/deep-panel-ios.hpp>
+    

@@ -11,7 +11,7 @@
 
 #include <stdio.h>
 #include "Panel.hpp"
-#include "connected-components.hpp"
+#include "ConnectedComponentResult.hpp"
 
 class DeepPanelResult {
 public:

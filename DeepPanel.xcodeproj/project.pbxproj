@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E16E9F827D5AF3DEBC931517 /* Pods_DeepPanelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19203333222B89B0ED7104E8 /* Pods_DeepPanelTests.framework */; };
-		E3B9246D9E81F3276247000A /* Pods_DeepPanel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C671D99AE5AA23335C8DF3 /* Pods_DeepPanel.framework */; };
+		8B741FBCA48C16190F8C2D4D /* Pods_DeepPanel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553F5338DA909341F55213CD /* Pods_DeepPanel.framework */; };
+		D82C3EFC2AB68D81A9FC2256 /* Pods_DeepPanelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8AD80A8B5206B75756A677F /* Pods_DeepPanelTests.framework */; };
 		EB6264BA253B150B007D5302 /* deep-panel-ios.hpp in Headers */ = {isa = PBXBuildFile; fileRef = EBCCA7ED253339D50095F356 /* deep-panel-ios.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		EBCCA7E225310C880095F356 /* DeepPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCCA7E125310C880095F356 /* DeepPanel.swift */; };
 		EBCCA7E52531A82A0095F356 /* model.tflite in Resources */ = {isa = PBXBuildFile; fileRef = EBCCA7E42531A82A0095F356 /* model.tflite */; };
@@ -25,8 +25,8 @@
 		EBCCA812253354720095F356 /* ConnectedComponentResult.hpp in Headers */ = {isa = PBXBuildFile; fileRef = EBCCA811253354720095F356 /* ConnectedComponentResult.hpp */; };
 		EBCCA81425335D3B0095F356 /* RawPanel.h in Headers */ = {isa = PBXBuildFile; fileRef = EBCCA81325335D3B0095F356 /* RawPanel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EBCCA81625335E4F0095F356 /* RawPanelsInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = EBCCA81525335D500095F356 /* RawPanelsInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EBCCA818253360B30095F356 /* RawPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCCA817253360B30095F356 /* RawPanel.m */; };
-		EBCCA820253361090095F356 /* RawPanelsInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCCA81F253361090095F356 /* RawPanelsInfo.m */; };
+		EBCCA818253360B30095F356 /* RawPanel.mm in Sources */ = {isa = PBXBuildFile; fileRef = EBCCA817253360B30095F356 /* RawPanel.mm */; };
+		EBCCA820253361090095F356 /* RawPanelsInfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = EBCCA81F253361090095F356 /* RawPanelsInfo.mm */; };
 		EBCCA825253368CF0095F356 /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCCA824253368CF0095F356 /* model.swift */; };
 		EBCCA82B2533737F0095F356 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCCA82A2533737F0095F356 /* Images.swift */; };
 		EBDE210B2530F7520039DDB4 /* DeepPanel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBDE21012530F7510039DDB4 /* DeepPanel.framework */; };
@@ -45,12 +45,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0017F1CE5C6F2AB9992B695B /* Pods-DeepPanelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepPanelTests.debug.xcconfig"; path = "Target Support Files/Pods-DeepPanelTests/Pods-DeepPanelTests.debug.xcconfig"; sourceTree = "<group>"; };
-		19203333222B89B0ED7104E8 /* Pods_DeepPanelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeepPanelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		54C3D79CA9B752E1ADD4002B /* Pods-DeepPanel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepPanel.release.xcconfig"; path = "Target Support Files/Pods-DeepPanel/Pods-DeepPanel.release.xcconfig"; sourceTree = "<group>"; };
-		655533999E158061C22CEFE9 /* Pods-DeepPanel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepPanel.debug.xcconfig"; path = "Target Support Files/Pods-DeepPanel/Pods-DeepPanel.debug.xcconfig"; sourceTree = "<group>"; };
-		6F2AECCF037C04111182AAB1 /* Pods-DeepPanelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepPanelTests.release.xcconfig"; path = "Target Support Files/Pods-DeepPanelTests/Pods-DeepPanelTests.release.xcconfig"; sourceTree = "<group>"; };
-		D5C671D99AE5AA23335C8DF3 /* Pods_DeepPanel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeepPanel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A018FA70CD262B87B07F1DA /* Pods-DeepPanel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepPanel.release.xcconfig"; path = "Target Support Files/Pods-DeepPanel/Pods-DeepPanel.release.xcconfig"; sourceTree = "<group>"; };
+		1DC501D64EC592483C9B8031 /* Pods-DeepPanelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepPanelTests.debug.xcconfig"; path = "Target Support Files/Pods-DeepPanelTests/Pods-DeepPanelTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3D99FFEB1CA60AB5D0A33365 /* Pods-DeepPanel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepPanel.debug.xcconfig"; path = "Target Support Files/Pods-DeepPanel/Pods-DeepPanel.debug.xcconfig"; sourceTree = "<group>"; };
+		553F5338DA909341F55213CD /* Pods_DeepPanel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeepPanel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8AD80A8B5206B75756A677F /* Pods_DeepPanelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeepPanelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2D535D1F693E6C94A75D097 /* Pods-DeepPanelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepPanelTests.release.xcconfig"; path = "Target Support Files/Pods-DeepPanelTests/Pods-DeepPanelTests.release.xcconfig"; sourceTree = "<group>"; };
 		EBCCA7E125310C880095F356 /* DeepPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepPanel.swift; sourceTree = "<group>"; };
 		EBCCA7E42531A82A0095F356 /* model.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = model.tflite; sourceTree = "<group>"; };
 		EBCCA7E62531AD830095F356 /* UIImage+TensorFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+TensorFlow.swift"; sourceTree = "<group>"; };
@@ -67,8 +67,8 @@
 		EBCCA811253354720095F356 /* ConnectedComponentResult.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ConnectedComponentResult.hpp; sourceTree = "<group>"; };
 		EBCCA81325335D3B0095F356 /* RawPanel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RawPanel.h; sourceTree = "<group>"; };
 		EBCCA81525335D500095F356 /* RawPanelsInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RawPanelsInfo.h; sourceTree = "<group>"; };
-		EBCCA817253360B30095F356 /* RawPanel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RawPanel.m; sourceTree = "<group>"; };
-		EBCCA81F253361090095F356 /* RawPanelsInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RawPanelsInfo.m; sourceTree = "<group>"; };
+		EBCCA817253360B30095F356 /* RawPanel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RawPanel.mm; sourceTree = "<group>"; };
+		EBCCA81F253361090095F356 /* RawPanelsInfo.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RawPanelsInfo.mm; sourceTree = "<group>"; };
 		EBCCA824253368CF0095F356 /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
 		EBCCA82A2533737F0095F356 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		EBDE21012530F7510039DDB4 /* DeepPanel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeepPanel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3B9246D9E81F3276247000A /* Pods_DeepPanel.framework in Frameworks */,
+				8B741FBCA48C16190F8C2D4D /* Pods_DeepPanel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,31 +93,44 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBDE210B2530F7520039DDB4 /* DeepPanel.framework in Frameworks */,
-				E16E9F827D5AF3DEBC931517 /* Pods_DeepPanelTests.framework in Frameworks */,
+				D82C3EFC2AB68D81A9FC2256 /* Pods_DeepPanelTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3A81A47295A7A1AD408C5E00 /* Frameworks */ = {
+		B26DDAA0B19783E4EAC58F2C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D5C671D99AE5AA23335C8DF3 /* Pods_DeepPanel.framework */,
-				19203333222B89B0ED7104E8 /* Pods_DeepPanelTests.framework */,
+				3D99FFEB1CA60AB5D0A33365 /* Pods-DeepPanel.debug.xcconfig */,
+				0A018FA70CD262B87B07F1DA /* Pods-DeepPanel.release.xcconfig */,
+				1DC501D64EC592483C9B8031 /* Pods-DeepPanelTests.debug.xcconfig */,
+				E2D535D1F693E6C94A75D097 /* Pods-DeepPanelTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DA2BE71B44B2335338D0EBA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				553F5338DA909341F55213CD /* Pods_DeepPanel.framework */,
+				B8AD80A8B5206B75756A677F /* Pods_DeepPanelTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B26DDAA0B19783E4EAC58F2C /* Pods */ = {
+		EB6264BB253C915D007D5302 /* NativeWrapper */ = {
 			isa = PBXGroup;
 			children = (
-				655533999E158061C22CEFE9 /* Pods-DeepPanel.debug.xcconfig */,
-				54C3D79CA9B752E1ADD4002B /* Pods-DeepPanel.release.xcconfig */,
-				0017F1CE5C6F2AB9992B695B /* Pods-DeepPanelTests.debug.xcconfig */,
-				6F2AECCF037C04111182AAB1 /* Pods-DeepPanelTests.release.xcconfig */,
+				EBCCA81F253361090095F356 /* RawPanelsInfo.mm */,
+				EBCCA81325335D3B0095F356 /* RawPanel.h */,
+				EBCCA817253360B30095F356 /* RawPanel.mm */,
+				EBCCA81525335D500095F356 /* RawPanelsInfo.h */,
+				EBCCA7F425333DD50095F356 /* DeepPaneliOSWrapper.mm */,
+				EBCCA7F225333D9E0095F356 /* DeepPaneliOSWrapper.h */,
 			);
-			path = Pods;
+			path = NativeWrapper;
 			sourceTree = "<group>";
 		};
 		EBCCA7E32531A7F50095F356 /* Model */ = {
@@ -131,12 +144,6 @@
 		EBCCA7FA253347F00095F356 /* Native */ = {
 			isa = PBXGroup;
 			children = (
-				EBCCA81325335D3B0095F356 /* RawPanel.h */,
-				EBCCA817253360B30095F356 /* RawPanel.m */,
-				EBCCA81525335D500095F356 /* RawPanelsInfo.h */,
-				EBCCA81F253361090095F356 /* RawPanelsInfo.m */,
-				EBCCA7F225333D9E0095F356 /* DeepPaneliOSWrapper.h */,
-				EBCCA7F425333DD50095F356 /* DeepPaneliOSWrapper.mm */,
 				EBCCA7ED253339D50095F356 /* deep-panel-ios.hpp */,
 				EBCCA7EE253339D50095F356 /* deep-panel-ios.cpp */,
 				EBCCA803253350380095F356 /* deep-panel.hpp */,
@@ -161,11 +168,13 @@
 		EBDE20F72530F7510039DDB4 = {
 			isa = PBXGroup;
 			children = (
+				EBDE21042530F7510039DDB4 /* DeepPanel.h */,
+				EBCCA7FA253347F00095F356 /* Native */,
 				EBDE21032530F7510039DDB4 /* DeepPanel */,
 				EBDE210E2530F7520039DDB4 /* DeepPanelTests */,
 				EBDE21022530F7510039DDB4 /* Products */,
 				B26DDAA0B19783E4EAC58F2C /* Pods */,
-				3A81A47295A7A1AD408C5E00 /* Frameworks */,
+				DA2BE71B44B2335338D0EBA5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -181,12 +190,11 @@
 		EBDE21032530F7510039DDB4 /* DeepPanel */ = {
 			isa = PBXGroup;
 			children = (
-				EBCCA7FA253347F00095F356 /* Native */,
+				EB6264BB253C915D007D5302 /* NativeWrapper */,
 				EBCCA7E32531A7F50095F356 /* Model */,
 				EBCCA82925336FFF0095F356 /* Extensions */,
 				EBCCA7E125310C880095F356 /* DeepPanel.swift */,
 				EBCCA824253368CF0095F356 /* model.swift */,
-				EBDE21042530F7510039DDB4 /* DeepPanel.h */,
 				EBDE21052530F7510039DDB4 /* Info.plist */,
 				EBCCA82A2533737F0095F356 /* Images.swift */,
 			);
@@ -229,7 +237,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBDE21152530F7520039DDB4 /* Build configuration list for PBXNativeTarget "DeepPanel" */;
 			buildPhases = (
-				CCEE3718DFFA15D2ED6F25CA /* [CP] Check Pods Manifest.lock */,
+				48EF2469FB1687914D2C7208 /* [CP] Check Pods Manifest.lock */,
 				EBDE20FC2530F7510039DDB4 /* Headers */,
 				EBDE20FD2530F7510039DDB4 /* Sources */,
 				EBDE20FE2530F7510039DDB4 /* Frameworks */,
@@ -248,7 +256,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBDE21182530F7520039DDB4 /* Build configuration list for PBXNativeTarget "DeepPanelTests" */;
 			buildPhases = (
-				B238545FE926FD1B2539999A /* [CP] Check Pods Manifest.lock */,
+				05E431F18EC97E4AB41564FF /* [CP] Check Pods Manifest.lock */,
 				EBDE21062530F7520039DDB4 /* Sources */,
 				EBDE21072530F7520039DDB4 /* Frameworks */,
 				EBDE21082530F7520039DDB4 /* Resources */,
@@ -320,7 +328,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B238545FE926FD1B2539999A /* [CP] Check Pods Manifest.lock */ = {
+		05E431F18EC97E4AB41564FF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -342,7 +350,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CCEE3718DFFA15D2ED6F25CA /* [CP] Check Pods Manifest.lock */ = {
+		48EF2469FB1687914D2C7208 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -375,12 +383,12 @@
 				EBCCA7E72531AD830095F356 /* UIImage+TensorFlow.swift in Sources */,
 				EBCCA8012533483A0095F356 /* connected-components.cpp in Sources */,
 				EBCCA7F525333DD50095F356 /* DeepPaneliOSWrapper.mm in Sources */,
-				EBCCA818253360B30095F356 /* RawPanel.m in Sources */,
+				EBCCA818253360B30095F356 /* RawPanel.mm in Sources */,
 				EBCCA7E225310C880095F356 /* DeepPanel.swift in Sources */,
 				EBCCA7FE253348140095F356 /* deep-panel.cpp in Sources */,
 				EBCCA82B2533737F0095F356 /* Images.swift in Sources */,
 				EBCCA825253368CF0095F356 /* model.swift in Sources */,
-				EBCCA820253361090095F356 /* RawPanelsInfo.m in Sources */,
+				EBCCA820253361090095F356 /* RawPanelsInfo.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,8 +533,9 @@
 		};
 		EBDE21162530F7520039DDB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 655533999E158061C22CEFE9 /* Pods-DeepPanel.debug.xcconfig */;
+			baseConfigurationReference = 3D99FFEB1CA60AB5D0A33365 /* Pods-DeepPanel.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -557,8 +566,9 @@
 		};
 		EBDE21172530F7520039DDB4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 54C3D79CA9B752E1ADD4002B /* Pods-DeepPanel.release.xcconfig */;
+			baseConfigurationReference = 0A018FA70CD262B87B07F1DA /* Pods-DeepPanel.release.xcconfig */;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -586,9 +596,10 @@
 		};
 		EBDE21192530F7520039DDB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0017F1CE5C6F2AB9992B695B /* Pods-DeepPanelTests.debug.xcconfig */;
+			baseConfigurationReference = 1DC501D64EC592483C9B8031 /* Pods-DeepPanelTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y8BRGL6JJ4;
 				INFOPLIST_FILE = DeepPanelTests/Info.plist;
@@ -606,9 +617,10 @@
 		};
 		EBDE211A2530F7520039DDB4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F2AECCF037C04111182AAB1 /* Pods-DeepPanelTests.release.xcconfig */;
+			baseConfigurationReference = E2D535D1F693E6C94A75D097 /* Pods-DeepPanelTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y8BRGL6JJ4;
 				INFOPLIST_FILE = DeepPanelTests/Info.plist;

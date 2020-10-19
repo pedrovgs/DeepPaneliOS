@@ -143,6 +143,7 @@
 				EB2E94D1253B0C410095ACFA /* Frameworks */,
 				EB2E94D2253B0C410095ACFA /* Resources */,
 				B73744B9504E7461E1D7D5F7 /* [CP] Embed Pods Frameworks */,
+				C0675947C2BD799E4C2C7DA5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -268,6 +269,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DeepPanelSample/Pods-DeepPanelSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0675947C2BD799E4C2C7DA5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DeepPanelSample/Pods-DeepPanelSample-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DeepPanelSample/Pods-DeepPanelSample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DeepPanelSample/Pods-DeepPanelSample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C7B5998E02EAE089D191FBE0 /* [CP] Check Pods Manifest.lock */ = {

@@ -25,7 +25,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DeepPanel: 212a398eaac9be0f13555ebeeb0ab86b032bf055
+  DeepPanel: 7b67ac7dbd04aea4526e08cec288f5d7def4ca90
   SteviaLayout: c2ecdcff57d44e38fd2f65e54ad52aeae28ca0c4
   TensorFlowLiteC: 51f50caf5777f740a70e2c1a5dbdc149e7aeb50b
   TensorFlowLiteSwift: fb152cc1eec36b25b03a23c07f5d58113170af58

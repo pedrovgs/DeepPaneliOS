@@ -7,6 +7,7 @@
 //
 
 #include "deep-panel-ios.hpp"
+#include "deep-panel.hpp"
 
 int matrix_size = 224;
 

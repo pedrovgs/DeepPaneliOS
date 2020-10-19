@@ -10,9 +10,7 @@
 #define deep_panel_ios_hpp
 
 #include <stdio.h>
-#include "deep-panel.hpp"
 #include "DeepPanelResult.hpp"
-
 
 using namespace std;
 
