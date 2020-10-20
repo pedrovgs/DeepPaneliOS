@@ -24,7 +24,7 @@ Usage
 
 ### Dependency
 
-Include the library in your ``build.gradle``
+Include the library in your ``Podfile``
 
 ```
 pod 'DeepPanel'
