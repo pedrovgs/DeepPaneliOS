@@ -14,24 +14,29 @@ import Foundation
 import UIKit
 
 extension UIImage {
-  func scaledImage(with size: CGSize) -> UIImage? {
-    let newHeight = size.height
-    let scale = newHeight / self.size.height
-    let newWidth = self.size.width * scale
-    let size = max(newWidth, newHeight)
-    UIGraphicsBeginImageContext(CGSize(width: size, height: size))
-    let backgroundColor = UIColor.black
-    backgroundColor.setFill()
-    let context = UIGraphicsGetCurrentContext()!
-    let backgroundRect = CGRect.init(x: 0, y: 0, width: size, height: size)
-    context.fill(backgroundRect)
-    if (newWidth < size) {
-        let newImageRect = CGRect.init(x: (size - newWidth) / 2, y: 0, width: newWidth, height: newHeight)
-        self.draw(in: newImageRect)
-    } else {
-        let newImageRect = CGRect.init(x: 0, y: (size - newHeight) / 2, width: newWidth, height: newHeight)
-        self.draw(in: newImageRect)
-    }
+  func scaledImage(with scalingSize: CGSize) -> UIImage? {
+    let isHorizontal = size.width > size.height
+    let newSize: CGSize = {
+        let maxSize = isHorizontal ? scalingSize.width : scalingSize.height
+        if isHorizontal {
+            let resizeFactor = maxSize / size.width
+            return CGSize(width: maxSize, height: ceil(size.height * resizeFactor))
+        } else {
+            let resizeFactor = maxSize / size.height
+            return CGSize(width: ceil(size.width * resizeFactor), height: maxSize)
+        }
+    }()
+    guard size != newSize else { return self }
+
+    UIGraphicsBeginImageContextWithOptions(scalingSize, true, scale)
+    let newImageRect: CGRect = {
+        if isHorizontal {
+            return CGRect(x: 0, y: (scalingSize.height - newSize.height) / 2, width: newSize.width, height: newSize.height)
+        } else {
+            return CGRect(x: (scalingSize.width - newSize.width) / 2, y: 0, width: newSize.width, height: newSize.height)
+        }
+    }()
+    draw(in: newImageRect)
     let newImage = UIGraphicsGetImageFromCurrentImageContext()
     UIGraphicsEndImageContext()
     return newImage

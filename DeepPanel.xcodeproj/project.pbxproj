@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		8B741FBCA48C16190F8C2D4D /* Pods_DeepPanel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553F5338DA909341F55213CD /* Pods_DeepPanel.framework */; };
+		95E0BC242578FD7900486A7C /* ImageManipulationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E0BC232578FD7900486A7C /* ImageManipulationTests.swift */; };
+		95E0BC3D2579001C00486A7C /* sample_page_0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 95E0BC3C2579001C00486A7C /* sample_page_0.jpg */; };
+		95E0BC442579007000486A7C /* XCTestCaseExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E0BC432579007000486A7C /* XCTestCaseExtensions.swift */; };
+		95E0BC4A2579021200486A7C /* sample_page_0_scaled.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 95E0BC492579021200486A7C /* sample_page_0_scaled.jpg */; };
+		95E0BC50257902AA00486A7C /* sample_page_0_rotated.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 95E0BC4F257902AA00486A7C /* sample_page_0_rotated.jpg */; };
+		95E0BC56257903EB00486A7C /* sample_page_0_rotated_scaled.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 95E0BC55257903EB00486A7C /* sample_page_0_rotated_scaled.jpg */; };
 		D82C3EFC2AB68D81A9FC2256 /* Pods_DeepPanelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8AD80A8B5206B75756A677F /* Pods_DeepPanelTests.framework */; };
 		EB6264BA253B150B007D5302 /* deep-panel-ios.hpp in Headers */ = {isa = PBXBuildFile; fileRef = EBCCA7ED253339D50095F356 /* deep-panel-ios.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		EBCCA7E225310C880095F356 /* DeepPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCCA7E125310C880095F356 /* DeepPanel.swift */; };
@@ -49,6 +55,12 @@
 		1DC501D64EC592483C9B8031 /* Pods-DeepPanelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepPanelTests.debug.xcconfig"; path = "Target Support Files/Pods-DeepPanelTests/Pods-DeepPanelTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3D99FFEB1CA60AB5D0A33365 /* Pods-DeepPanel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepPanel.debug.xcconfig"; path = "Target Support Files/Pods-DeepPanel/Pods-DeepPanel.debug.xcconfig"; sourceTree = "<group>"; };
 		553F5338DA909341F55213CD /* Pods_DeepPanel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeepPanel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95E0BC232578FD7900486A7C /* ImageManipulationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManipulationTests.swift; sourceTree = "<group>"; };
+		95E0BC3C2579001C00486A7C /* sample_page_0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample_page_0.jpg; sourceTree = "<group>"; };
+		95E0BC432579007000486A7C /* XCTestCaseExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCaseExtensions.swift; sourceTree = "<group>"; };
+		95E0BC492579021200486A7C /* sample_page_0_scaled.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample_page_0_scaled.jpg; sourceTree = "<group>"; };
+		95E0BC4F257902AA00486A7C /* sample_page_0_rotated.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample_page_0_rotated.jpg; sourceTree = "<group>"; };
+		95E0BC55257903EB00486A7C /* sample_page_0_rotated_scaled.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample_page_0_rotated_scaled.jpg; sourceTree = "<group>"; };
 		B8AD80A8B5206B75756A677F /* Pods_DeepPanelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeepPanelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D535D1F693E6C94A75D097 /* Pods-DeepPanelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepPanelTests.release.xcconfig"; path = "Target Support Files/Pods-DeepPanelTests/Pods-DeepPanelTests.release.xcconfig"; sourceTree = "<group>"; };
 		EBCCA7E125310C880095F356 /* DeepPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepPanel.swift; sourceTree = "<group>"; };
@@ -100,6 +112,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		95E0BC3B2579000F00486A7C /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				95E0BC55257903EB00486A7C /* sample_page_0_rotated_scaled.jpg */,
+				95E0BC4F257902AA00486A7C /* sample_page_0_rotated.jpg */,
+				95E0BC492579021200486A7C /* sample_page_0_scaled.jpg */,
+				95E0BC3C2579001C00486A7C /* sample_page_0.jpg */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		95E0BC422579005D00486A7C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				95E0BC432579007000486A7C /* XCTestCaseExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		B26DDAA0B19783E4EAC58F2C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,7 +235,10 @@
 		EBDE210E2530F7520039DDB4 /* DeepPanelTests */ = {
 			isa = PBXGroup;
 			children = (
+				95E0BC422579005D00486A7C /* Extensions */,
+				95E0BC3B2579000F00486A7C /* Fixtures */,
 				EBDE210F2530F7520039DDB4 /* DeepPanelTests.swift */,
+				95E0BC232578FD7900486A7C /* ImageManipulationTests.swift */,
 				EBDE21112530F7520039DDB4 /* Info.plist */,
 			);
 			path = DeepPanelTests;
@@ -322,6 +356,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95E0BC3D2579001C00486A7C /* sample_page_0.jpg in Resources */,
+				95E0BC4A2579021200486A7C /* sample_page_0_scaled.jpg in Resources */,
+				95E0BC56257903EB00486A7C /* sample_page_0_rotated_scaled.jpg in Resources */,
+				95E0BC50257902AA00486A7C /* sample_page_0_rotated.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +434,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95E0BC442579007000486A7C /* XCTestCaseExtensions.swift in Sources */,
+				95E0BC242578FD7900486A7C /* ImageManipulationTests.swift in Sources */,
 				EBDE21102530F7520039DDB4 /* DeepPanelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -539,7 +579,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = Y8BRGL6JJ4;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -551,7 +591,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.0.1;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.pedrovgs.deeppanel.DeepPanel;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -560,7 +600,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "armv7 arm64e arm64 armv7s";
+				VALID_ARCHS = "armv7 arm64e arm64 armv7s x86_64";
 			};
 			name = Debug;
 		};
@@ -572,7 +612,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = Y8BRGL6JJ4;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -590,7 +630,7 @@
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "armv7 arm64e arm64 armv7s";
+				VALID_ARCHS = "armv7 arm64e arm64 armv7s x86_64";
 			};
 			name = Release;
 		};
