@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/pedrovgs/DeepPaneliOS.git", :tag => "#{s.version}" }
   s.platform = :ios, '9.0'
   s.framework = "Foundation"
-  s.dependency "TensorFlowLiteSwift"
+  s.dependency "TensorFlowLiteSwift/Metal"
   s.static_framework = true
   s.swift_versions = "5.0"
   s.requires_arc = true
