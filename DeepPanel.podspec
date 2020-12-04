@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/pedrovgs/DeepPaneliOS.git", :tag => "#{s.version}" }
   s.platform = :ios, '9.0'
   s.framework = "Foundation"
-  s.dependency "TensorFlowLiteSwift"
+  s.dependency "TensorFlowLiteSwift/Metal"
   s.static_framework = true
   s.swift_versions = "5.0"
   s.requires_arc = true
@@ -18,4 +18,6 @@ Pod::Spec.new do |s|
   s.resources = "DeepPanel/**/*.{tflite}"
   s.libraries = "c++"
   s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/Native" }
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end

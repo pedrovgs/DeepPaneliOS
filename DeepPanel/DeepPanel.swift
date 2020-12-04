@@ -110,7 +110,7 @@ public class DeepPanel {
                 andOriginalImageWidth: Int32(originalImageWidth),
                 andOriginalImageHeigth: Int32(originalImageHeight))
         } catch let error {
-            fatalError("Failed to evaluate the model with tihe image data: \(error.localizedDescription)")
+            fatalError("Failed to evaluate the model with the image data: \(error.localizedDescription)")
         }
     }
     
