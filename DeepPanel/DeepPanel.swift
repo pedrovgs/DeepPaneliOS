@@ -102,10 +102,10 @@ public class DeepPanel {
             try interpreter.copy(input, toInputAt: 0)
             try interpreter.invoke()
             let outputTensor = try interpreter.output(at: 0)
-            let prediction = mapOutputTensorToPredicition(outputTensor)
+            var prediction = mapOutputTensorToPredicition(outputTensor)
             let scale: Float = computeResizeScale(originalImageWidth, originalImageHeight)
             return nativeDeepPanel.extractPanelsInfo(
-                prediction,
+                &prediction,
                 andScale: scale,
                 andOriginalImageWidth: Int32(originalImageWidth),
                 andOriginalImageHeigth: Int32(originalImageHeight))
@@ -114,9 +114,8 @@ public class DeepPanel {
         }
     }
     
-    private func mapOutputTensorToPredicition(_ outputTensor: Tensor) -> UnsafeMutablePointer<Float> {
-        let logits: [Float32] = outputTensor.data.toArray(type: Float32.self)
-        return UnsafeMutablePointer(mutating: logits)
+    private func mapOutputTensorToPredicition(_ outputTensor: Tensor) -> [Float32] {
+        return outputTensor.data.toArray(type: Float32.self)
     }
     
     private func scaleAndExtractImageRgbData(_ image: UIImage) -> Data {
