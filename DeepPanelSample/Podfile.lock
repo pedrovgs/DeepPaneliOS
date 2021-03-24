@@ -1,14 +1,17 @@
 PODS:
-  - DeepPanel (0.0.1):
-    - TensorFlowLiteSwift
+  - DeepPanel (0.0.2):
+    - TensorFlowLiteSwift/Metal
   - SteviaLayout (4.7.3)
   - TensorFlowLiteC (2.3.0):
     - TensorFlowLiteC/Core (= 2.3.0)
   - TensorFlowLiteC/Core (2.3.0)
-  - TensorFlowLiteSwift (2.3.0):
-    - TensorFlowLiteSwift/Core (= 2.3.0)
+  - TensorFlowLiteC/Metal (2.3.0):
+    - TensorFlowLiteC/Core
   - TensorFlowLiteSwift/Core (2.3.0):
     - TensorFlowLiteC (= 2.3.0)
+  - TensorFlowLiteSwift/Metal (2.3.0):
+    - TensorFlowLiteC/Metal (= 2.3.0)
+    - TensorFlowLiteSwift/Core (= 2.3.0)
 
 DEPENDENCIES:
   - DeepPanel (from `../`)
@@ -25,11 +28,11 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DeepPanel: 7b67ac7dbd04aea4526e08cec288f5d7def4ca90
+  DeepPanel: c3e52f0d6bd427ca68618e8eb10d644fd94e7dd4
   SteviaLayout: c2ecdcff57d44e38fd2f65e54ad52aeae28ca0c4
   TensorFlowLiteC: 51f50caf5777f740a70e2c1a5dbdc149e7aeb50b
   TensorFlowLiteSwift: fb152cc1eec36b25b03a23c07f5d58113170af58
 
 PODFILE CHECKSUM: 3e9c6d0d593d46a0d7ddc701aa8d2f7f7c10b52d
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.1
