@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88F550D1260A735000611056 /* DeepPanelTestsHostApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F550D0260A735000611056 /* DeepPanelTestsHostApp.swift */; };
+		88F550D3260A735000611056 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F550D2260A735000611056 /* ContentView.swift */; };
+		88F550D5260A735100611056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88F550D4260A735100611056 /* Assets.xcassets */; };
+		88F550D8260A735100611056 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88F550D7260A735100611056 /* Preview Assets.xcassets */; };
 		8B741FBCA48C16190F8C2D4D /* Pods_DeepPanel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553F5338DA909341F55213CD /* Pods_DeepPanel.framework */; };
 		95E0BC242578FD7900486A7C /* ImageManipulationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E0BC232578FD7900486A7C /* ImageManipulationTests.swift */; };
 		95E0BC3D2579001C00486A7C /* sample_page_0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 95E0BC3C2579001C00486A7C /* sample_page_0.jpg */; };
@@ -41,6 +45,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		88F550E4260A735900611056 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBDE20F82530F7510039DDB4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88F550CD260A735000611056;
+			remoteInfo = DeepPanelTestsHost;
+		};
 		EBDE210C2530F7520039DDB4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EBDE20F82530F7510039DDB4 /* Project object */;
@@ -55,6 +66,12 @@
 		1DC501D64EC592483C9B8031 /* Pods-DeepPanelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepPanelTests.debug.xcconfig"; path = "Target Support Files/Pods-DeepPanelTests/Pods-DeepPanelTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3D99FFEB1CA60AB5D0A33365 /* Pods-DeepPanel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeepPanel.debug.xcconfig"; path = "Target Support Files/Pods-DeepPanel/Pods-DeepPanel.debug.xcconfig"; sourceTree = "<group>"; };
 		553F5338DA909341F55213CD /* Pods_DeepPanel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeepPanel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88F550CE260A735000611056 /* DeepPanelTestsHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepPanelTestsHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88F550D0260A735000611056 /* DeepPanelTestsHostApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepPanelTestsHostApp.swift; sourceTree = "<group>"; };
+		88F550D2260A735000611056 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		88F550D4260A735100611056 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88F550D7260A735100611056 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		88F550D9260A735100611056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95E0BC232578FD7900486A7C /* ImageManipulationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManipulationTests.swift; sourceTree = "<group>"; };
 		95E0BC3C2579001C00486A7C /* sample_page_0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample_page_0.jpg; sourceTree = "<group>"; };
 		95E0BC432579007000486A7C /* XCTestCaseExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCaseExtensions.swift; sourceTree = "<group>"; };
@@ -92,6 +109,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		88F550CB260A735000611056 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EBDE20FE2530F7510039DDB4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -112,6 +136,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		88F550CF260A735000611056 /* DeepPanelTestsHost */ = {
+			isa = PBXGroup;
+			children = (
+				88F550D0260A735000611056 /* DeepPanelTestsHostApp.swift */,
+				88F550D2260A735000611056 /* ContentView.swift */,
+				88F550D4260A735100611056 /* Assets.xcassets */,
+				88F550D9260A735100611056 /* Info.plist */,
+				88F550D6260A735100611056 /* Preview Content */,
+			);
+			path = DeepPanelTestsHost;
+			sourceTree = "<group>";
+		};
+		88F550D6260A735100611056 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				88F550D7260A735100611056 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		88F550E9260A738D00611056 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EBDE21112530F7520039DDB4 /* Info.plist */,
+				88F550CF260A735000611056 /* DeepPanelTestsHost */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		95E0BC3B2579000F00486A7C /* Fixtures */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +267,7 @@
 			children = (
 				EBDE21012530F7510039DDB4 /* DeepPanel.framework */,
 				EBDE210A2530F7520039DDB4 /* DeepPanelTests.xctest */,
+				88F550CE260A735000611056 /* DeepPanelTestsHost.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -235,11 +289,11 @@
 		EBDE210E2530F7520039DDB4 /* DeepPanelTests */ = {
 			isa = PBXGroup;
 			children = (
-				95E0BC422579005D00486A7C /* Extensions */,
-				95E0BC3B2579000F00486A7C /* Fixtures */,
 				EBDE210F2530F7520039DDB4 /* DeepPanelTests.swift */,
 				95E0BC232578FD7900486A7C /* ImageManipulationTests.swift */,
-				EBDE21112530F7520039DDB4 /* Info.plist */,
+				95E0BC422579005D00486A7C /* Extensions */,
+				95E0BC3B2579000F00486A7C /* Fixtures */,
+				88F550E9260A738D00611056 /* Supporting Files */,
 			);
 			path = DeepPanelTests;
 			sourceTree = "<group>";
@@ -267,6 +321,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		88F550CD260A735000611056 /* DeepPanelTestsHost */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88F550DA260A735100611056 /* Build configuration list for PBXNativeTarget "DeepPanelTestsHost" */;
+			buildPhases = (
+				88F550CA260A735000611056 /* Sources */,
+				88F550CB260A735000611056 /* Frameworks */,
+				88F550CC260A735000611056 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeepPanelTestsHost;
+			productName = DeepPanelTestsHost;
+			productReference = 88F550CE260A735000611056 /* DeepPanelTestsHost.app */;
+			productType = "com.apple.product-type.application";
+		};
 		EBDE21002530F7510039DDB4 /* DeepPanel */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBDE21152530F7520039DDB4 /* Build configuration list for PBXNativeTarget "DeepPanel" */;
@@ -299,6 +370,7 @@
 			);
 			dependencies = (
 				EBDE210D2530F7520039DDB4 /* PBXTargetDependency */,
+				88F550E5260A735900611056 /* PBXTargetDependency */,
 			);
 			name = DeepPanelTests;
 			productName = DeepPanelTests;
@@ -311,16 +383,20 @@
 		EBDE20F82530F7510039DDB4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1160;
+				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = "Pedro Gómez";
 				TargetAttributes = {
+					88F550CD260A735000611056 = {
+						CreatedOnToolsVersion = 12.3;
+					};
 					EBDE21002530F7510039DDB4 = {
 						CreatedOnToolsVersion = 11.6;
 						LastSwiftMigration = 1160;
 					};
 					EBDE21092530F7520039DDB4 = {
 						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 88F550CD260A735000611056;
 					};
 				};
 			};
@@ -339,11 +415,21 @@
 			targets = (
 				EBDE21002530F7510039DDB4 /* DeepPanel */,
 				EBDE21092530F7520039DDB4 /* DeepPanelTests */,
+				88F550CD260A735000611056 /* DeepPanelTestsHost */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		88F550CC260A735000611056 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88F550D8260A735100611056 /* Preview Assets.xcassets in Resources */,
+				88F550D5260A735100611056 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EBDE20FF2530F7510039DDB4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -413,6 +499,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		88F550CA260A735000611056 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88F550D3260A735000611056 /* ContentView.swift in Sources */,
+				88F550D1260A735000611056 /* DeepPanelTestsHostApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EBDE20FD2530F7510039DDB4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -443,6 +538,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		88F550E5260A735900611056 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88F550CD260A735000611056 /* DeepPanelTestsHost */;
+			targetProxy = 88F550E4260A735900611056 /* PBXContainerItemProxy */;
+		};
 		EBDE210D2530F7520039DDB4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EBDE21002530F7510039DDB4 /* DeepPanel */;
@@ -451,6 +551,48 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		88F550DB260A735100611056 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"DeepPanelTests/Supporting Files/DeepPanelTestsHost/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "DeepPanelTests/Supporting Files/DeepPanelTestsHost/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = es.produkt.app.panels.PanelsExtensionsShared.DeepPanelTestsHost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		88F550DC260A735100611056 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"DeepPanelTests/Supporting Files/DeepPanelTestsHost/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "DeepPanelTests/Supporting Files/DeepPanelTestsHost/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = es.produkt.app.panels.PanelsExtensionsShared.DeepPanelTestsHost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		EBDE21132530F7520039DDB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -643,8 +785,8 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y8BRGL6JJ4;
-				INFOPLIST_FILE = DeepPanelTests/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "DeepPanelTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -654,6 +796,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeepPanelTestsHost.app/DeepPanelTestsHost";
 			};
 			name = Debug;
 		};
@@ -664,8 +807,8 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y8BRGL6JJ4;
-				INFOPLIST_FILE = DeepPanelTests/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "DeepPanelTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -675,12 +818,22 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeepPanelTestsHost.app/DeepPanelTestsHost";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		88F550DA260A735100611056 /* Build configuration list for PBXNativeTarget "DeepPanelTestsHost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88F550DB260A735100611056 /* Debug */,
+				88F550DC260A735100611056 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EBDE20FB2530F7510039DDB4 /* Build configuration list for PBXProject "DeepPanel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
