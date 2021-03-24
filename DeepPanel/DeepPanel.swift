@@ -82,9 +82,7 @@ public class DeepPanel {
               options?.threadCount = 2
         #else
               // Use GPU on real device for inference as this model is fully supported.
-            if useMetal {
-                delegates = [MetalDelegate()]
-            }
+              delegates = useMetal ? [MetalDelegate()] : nil
         #endif
         do {
           let interpreter = try Interpreter(modelPath: modelPath, options: options, delegates: delegates)
