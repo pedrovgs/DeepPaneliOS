@@ -17,8 +17,8 @@ public class DeepPanel {
     private static var nativeDeepPanel: DeepPaneliOSWrapper?
     private static let classCount = 3
     
-    public static func initialize() {
-        interpreter = initializeModel()
+    public static func initialize(useMetal: Bool = true) {
+        interpreter = initializeModel(useMetal: useMetal)
         nativeDeepPanel = DeepPaneliOSWrapper()
     }
     
@@ -67,7 +67,7 @@ public class DeepPanel {
             predictionResult: predictionResult)
     }
 
-    private static func initializeModel() -> Interpreter? {
+    private static func initializeModel(useMetal: Bool = true) -> Interpreter? {
         guard let modelPath = Bundle.main.path(
           forResource: "model",
           ofType: "tflite"
@@ -82,7 +82,7 @@ public class DeepPanel {
               options?.threadCount = 2
         #else
               // Use GPU on real device for inference as this model is fully supported.
-              delegates = [MetalDelegate()]
+              delegates = useMetal ? [MetalDelegate()] : nil
         #endif
         do {
           let interpreter = try Interpreter(modelPath: modelPath, options: options, delegates: delegates)
@@ -102,10 +102,10 @@ public class DeepPanel {
             try interpreter.copy(input, toInputAt: 0)
             try interpreter.invoke()
             let outputTensor = try interpreter.output(at: 0)
-            let prediction = mapOutputTensorToPredicition(outputTensor)
+            var prediction = mapOutputTensorToPredicition(outputTensor)
             let scale: Float = computeResizeScale(originalImageWidth, originalImageHeight)
             return nativeDeepPanel.extractPanelsInfo(
-                prediction,
+                &prediction,
                 andScale: scale,
                 andOriginalImageWidth: Int32(originalImageWidth),
                 andOriginalImageHeigth: Int32(originalImageHeight))
@@ -114,9 +114,8 @@ public class DeepPanel {
         }
     }
     
-    private func mapOutputTensorToPredicition(_ outputTensor: Tensor) -> UnsafeMutablePointer<Float> {
-        let logits: [Float32] = outputTensor.data.toArray(type: Float32.self)
-        return UnsafeMutablePointer(mutating: logits)
+    private func mapOutputTensorToPredicition(_ outputTensor: Tensor) -> [Float32] {
+        return outputTensor.data.toArray(type: Float32.self)
     }
     
     private func scaleAndExtractImageRgbData(_ image: UIImage) -> Data {
