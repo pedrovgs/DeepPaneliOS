@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "DeepPanel"
-  s.version          = "0.0.2"
+  s.version          = "0.0.3"
   s.summary          = "Panels' segmentaiton made easy with artificial intelligence"
   s.license          = "Apache License, Version 2.0"
   s.homepage         = "https://github.com/pedrovgs/DeepPaneliOS"
