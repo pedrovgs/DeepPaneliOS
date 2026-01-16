@@ -3,7 +3,7 @@ on: [pull_request, push]
 
 jobs:
   build:
-    runs-on: macOS-latest
+    runs-on: macos-13
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -21,13 +21,13 @@ jobs:
       - name: Lint Podspec
         run: pod lib lint --allow-warnings
       - name: Build DeepPanel
-        run: set -o pipefail && xcodebuild clean test -workspace DeepPanel.xcworkspace -scheme 'DeepPanel' -destination 'platform=iOS Simulator,name=iPhone 16' -showBuildTimingSummary CODE_SIGN_IDENTITY=- | xcpretty -c
+        run: set -o pipefail && xcodebuild clean test -workspace DeepPanel.xcworkspace -scheme 'DeepPanel' -destination 'platform=iOS Simulator,name=iPhone 14' -showBuildTimingSummary CODE_SIGN_IDENTITY=- | xcpretty -c
       - name: Install Dependencies
         working-directory: DeepPanelSample
         run: pod install
       - name: Build DeepPanelSample
         working-directory: DeepPanelSample
-        run: set -o pipefail && xcodebuild clean test -workspace DeepPanelSample.xcworkspace -scheme 'DeepPanelSample' -destination 'platform=iOS Simulator,name=iPhone 16' -showBuildTimingSummary CODE_SIGN_IDENTITY=- | xcpretty -c
+        run: set -o pipefail && xcodebuild clean test -workspace DeepPanelSample.xcworkspace -scheme 'DeepPanelSample' -destination 'platform=iOS Simulator,name=iPhone 14' -showBuildTimingSummary CODE_SIGN_IDENTITY=- | xcpretty -c
 
     env:
       PODS_PATH: ${{ github.workspace }}/Pods
